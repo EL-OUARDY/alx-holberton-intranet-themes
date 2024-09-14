@@ -1,5 +1,4 @@
-import { Palette, PanelRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Palette, PanelLeft } from "lucide-react";
 import {
   SheetTrigger,
   SheetContent,
@@ -7,24 +6,19 @@ import {
   SheetTitle,
   Sheet,
 } from "./ui/sheet";
+import { Switch } from "./ui/switch";
+import { useState } from "react";
 
 function Header() {
-  return (
-    <div className="flex rounded-md border border-input">
-      <div className="logo flex flex-1 items-center">
-        {/* <img className="size-6" src="./icons/icon128.png" alt="logo" /> */}
-        <Button className="size-8 border-none" variant="outline" size="icon">
-          <Palette className="size-4" />
-        </Button>
-      </div>
+  const [isActive, setIsActive] = useState<boolean>(true);
 
+  return (
+    <div className="flex h-8 items-center rounded-md border border-input px-2">
       <Sheet>
         <SheetTrigger asChild>
-          <Button className="size-8 border-none" variant="outline" size="icon">
-            <PanelRight className="size-4" />
-          </Button>
+          <PanelLeft className="size-5 cursor-pointer" />
         </SheetTrigger>
-        <SheetContent className="w-[260px]">
+        <SheetContent side={"left"} className="w-[240px]">
           <SheetHeader>
             <SheetTitle>About</SheetTitle>
           </SheetHeader>
@@ -36,6 +30,13 @@ function Header() {
           </div>
         </SheetContent>
       </Sheet>
+      <div className="logo flex flex-1 justify-center">
+        {/* <img className="size-6" src="./icons/icon128.png" alt="logo" /> */}
+        <Palette className="size-5" />
+      </div>
+      <div className="flex">
+        <Switch checked={isActive} onCheckedChange={setIsActive} />
+      </div>
     </div>
   );
 }
