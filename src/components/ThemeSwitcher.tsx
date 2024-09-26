@@ -10,7 +10,6 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useState } from "react";
-import { Palette } from "lucide-react";
 
 function ThemeSwitcher() {
   const [selectedTheme, setSelectedTheme] = useState<string | undefined>(
@@ -21,7 +20,7 @@ function ThemeSwitcher() {
     <Card className="h-full pt-4">
       <CardContent className="flex h-full flex-col gap-1 space-y-2 p-4 pt-0">
         <Select value={selectedTheme} onValueChange={setSelectedTheme}>
-          <SelectTrigger className="!text-[0.82rem]">
+          <SelectTrigger>
             <SelectValue placeholder="Select a Theme" />
           </SelectTrigger>
 
@@ -70,8 +69,8 @@ function ThemeSwitcher() {
             </div>
           </>
         ) : (
-          <div className="flex h-full items-center justify-center">
-            <Palette className="size-16 text-muted-foreground" />
+          <div className="flex h-full items-center justify-center rounded-lg border">
+            <img className="size-28" src="./logo.svg" alt="logo" />
           </div>
         )}
       </CardContent>
