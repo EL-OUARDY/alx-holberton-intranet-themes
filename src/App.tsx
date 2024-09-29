@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import Contribute from "./components/Contribute";
 
 function App() {
   return (
@@ -29,6 +30,14 @@ function App() {
             </TabsList>
             <TabsContent value="themes" className="flex-1">
               <ThemeSwitcher />
+            </TabsContent>
+            <TabsContent value="customize" className="flex-1">
+              <div className="flex h-full items-center justify-center rounded-lg border">
+                <img className="size-28" src="./logo.svg" alt="logo" />
+              </div>
+            </TabsContent>
+            <TabsContent value="contribute" className="flex-1">
+              <Contribute />
             </TabsContent>
           </Tabs>
         </div>
