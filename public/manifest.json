@@ -3,7 +3,11 @@
   "name": "ALX Holberton Intranet Themes",
   "version": "1.0",
   "description": "Custom themes for ALX Holberton School intranet",
-  "permissions": ["activeTab", "storage"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
   "action": {
     "default_popup": "index.html",
     "default_title": "ALX Holberton Custom themes"
@@ -18,7 +22,10 @@
         "https://intranet.alxswe.com/*",
         "https://intranet.hbtn.io/*"
       ],
-      "js": ["src/main.js"]
+      "js": [
+        "src/main.js"
+      ],
+      "run_at": "document_start"
     }
   ]
 }
