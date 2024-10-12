@@ -23,9 +23,15 @@
         "https://intranet.hbtn.io/*"
       ],
       "js": [
-        "src/main.js"
+        "content/content.js"
+      ],
+      "css": [
+        "content/style.css"
       ],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "content/background.js"
+  }
 }

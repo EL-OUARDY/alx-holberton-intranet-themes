@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./public/content", // Output directory for compiled files
+    "rootDir": "./src/extension", // Input directory
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "strict": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [ // Include TypeScript files in the public folder
+    "./src/extension/*.ts"
+  ]
+}

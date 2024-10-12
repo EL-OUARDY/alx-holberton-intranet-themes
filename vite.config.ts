@@ -15,9 +15,9 @@ export default defineConfig({
         main: "index.html",
       },
       output: {
-        entryFileNames: "src/[name].js",
-        chunkFileNames: "src/[name].js",
-        assetFileNames: "src/[name].[ext]",
+        entryFileNames: "popup/[name].js",
+        chunkFileNames: "popup/[name].js",
+        assetFileNames: "popup/[name].[ext]",
       },
     },
   },
