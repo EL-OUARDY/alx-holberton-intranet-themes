@@ -1,0 +1,14 @@
+{
+    "id": 4,
+    "name": "Dracula Theme",
+    "description": "A dark theme inspired by Dracula color palette, featuring bold, vibrant colors on a deep background for focused coding.",
+    "mode": "dark",
+    "author": {
+        "name": "Dracula",
+        "twitter": "https://x.com/draculatheme",
+        "github": "https://github.com/dracula/dracula-theme"
+    },
+    "colors": {
+        "background": "purple"
+    }
+}

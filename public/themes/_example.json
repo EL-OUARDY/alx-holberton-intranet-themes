@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "name": "Theme Name",
+    "description": "A brief description describing your themes",
+    "mode": "light | dark",
+    "author": {
+        "name": "EL_OUARDY",
+        "twitter": "https://x.com/_ELOUARDY",
+        "github": "https://github.com/EL-OUARDY"
+    },
+    "colors": {
+        "background": "purple"
+    }
+}

@@ -9,17 +9,30 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getAvailableThemes } from "@/lib/utils";
+import { IThemesList } from "@/models/Theme";
+import { useConfig } from "@/contexts/ConfigProvider";
 
 function ThemeSwitcher() {
-  const [selectedTheme, setSelectedTheme] = useState<string | undefined>(
-    undefined,
-  );
+  const { activeTheme, changeTheme } = useConfig();
+  const [themesList, setThemeslist] = useState<IThemesList[]>();
+
+  useEffect(() => {
+    getAvailableThemes()
+      .then((result) => {
+        result.sort((a, b) => a.id - b.id);
+        setThemeslist(result);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
 
   return (
     <Card className="h-full pt-4">
       <CardContent className="flex h-full flex-col gap-1 space-y-2 p-4 pt-0">
-        <Select value={selectedTheme} onValueChange={setSelectedTheme}>
+        <Select onValueChange={(x) => changeTheme(x)}>
           <SelectTrigger>
             <SelectValue placeholder="Select a Theme" />
           </SelectTrigger>
@@ -27,18 +40,27 @@ function ThemeSwitcher() {
           <SelectContent className="max-h-44">
             <SelectGroup>
               <SelectLabel>Themes</SelectLabel>
-              <SelectItem value="vs-light">Visual Studio Light</SelectItem>
-              <SelectItem value="vs-dark">Visual Studio Dark</SelectItem>
-              <SelectItem value="dracula">Dracula Theme</SelectItem>
+              {themesList?.map((theme) => (
+                <SelectItem
+                  className="cursor-pointer"
+                  key={theme.id}
+                  value={theme.filename}
+                >
+                  {theme.name}
+                </SelectItem>
+              ))}
             </SelectGroup>
           </SelectContent>
         </Select>
-        {selectedTheme ? (
+        {activeTheme ? (
           <>
             <div className="flex text-xs">
               <span className="flex-1 underline">Created By:</span>
-              <a href="#" className="ml-1 font-normal hover:font-bold">
-                @EL_Ouardy
+              <a
+                href={activeTheme?.author.github}
+                className="ml-1 font-normal lowercase hover:font-bold"
+              >
+                @{activeTheme?.author.name}
               </a>
             </div>
             <Separator />
@@ -46,10 +68,7 @@ function ThemeSwitcher() {
               <div className="text-xs">
                 <div className="mb-1 underline">Description:</div>
                 <div className="line-clamp-4 cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Assumenda quos labore commodi dolorum tenetur sunt eligendi
-                  enim fugit omnis velit, temporibus odit nam, harum, beatae
-                  vitae inventore nostrum facilis neque!
+                  {activeTheme?.description}
                 </div>
               </div>
               <div className="text-xs">

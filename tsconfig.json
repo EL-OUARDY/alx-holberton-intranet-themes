@@ -16,7 +16,11 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
-    }
-  }
+      ],
+    },
+  },
+  "exclude": [
+    "src/content.ts",
+    "src/background.ts"
+  ]
 }

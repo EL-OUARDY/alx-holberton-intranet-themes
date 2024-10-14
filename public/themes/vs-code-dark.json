@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "name": "Visual Studio Dark",
+    "description": "Inspired by the default dark color theme of Microsoft's Visual Studio Code editor.",
+    "mode": "dark",
+    "author": {
+        "name": "EL_OUARDY",
+        "twitter": "https://x.com/_ELOUARDY",
+        "github": "https://github.com/EL-OUARDY"
+    },
+    "colors": {
+        "background": "tomato"
+    }
+}

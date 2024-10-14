@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
     "outDir": "./public/content", // Output directory for compiled files
-    "rootDir": "./src/extension", // Input directory
+    "rootDir": "./src", // Input directory
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
     "strict": true,
-    "module": "ESNext",
+    "module": "CommonJS",
     "target": "ESNext",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
   },
   "include": [ // Include TypeScript files in the public folder
-    "./src/extension/*.ts"
+    "src/background.ts",
+    "src/content.ts"
+  ],
+  "exclude": [
+    "src/models", // Exclude the models
   ]
 }

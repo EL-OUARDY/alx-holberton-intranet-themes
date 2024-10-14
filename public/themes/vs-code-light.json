@@ -1,0 +1,14 @@
+{
+    "id": 2,
+    "name": "Visual Studio Light",
+    "description": "Inspired by the default light color theme of Microsoft's Visual Studio Code editor.",
+    "mode": "light",
+    "author": {
+        "name": "EL_OUARDY",
+        "twitter": "https://x.com/_ELOUARDY",
+        "github": "https://github.com/EL-OUARDY"
+    },
+    "colors": {
+        "background": "cyan"
+    }
+}

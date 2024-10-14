@@ -7,7 +7,6 @@ import {
   Sheet,
 } from "./ui/sheet";
 import { Switch } from "./ui/switch";
-import { useState } from "react";
 import {
   Tooltip,
   TooltipContent,
@@ -15,9 +14,10 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { Separator } from "./ui/separator";
+import { useConfig } from "@/contexts/ConfigProvider";
 
 function Header() {
-  const [isActive, setIsActive] = useState<boolean>(true);
+  const { isEnabled, toggleExtension } = useConfig();
 
   return (
     <div className="relative flex h-8 items-center rounded-md border border-input px-2">
@@ -58,11 +58,11 @@ function Header() {
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="z-10 ml-auto flex">
-              <Switch checked={isActive} onCheckedChange={setIsActive} />
+              <Switch checked={isEnabled} onCheckedChange={toggleExtension} />
             </div>
           </TooltipTrigger>
           <TooltipContent side="bottom">
-            <p>{isActive ? "Turn off" : "Turn on"}</p>
+            <p>{isEnabled ? "Turn off" : "Turn on"}</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
