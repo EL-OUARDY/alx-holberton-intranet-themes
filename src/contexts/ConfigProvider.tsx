@@ -1,7 +1,6 @@
 import React, { ReactNode, useContext, useState } from "react";
 import { ITheme } from "@/models/Theme";
 import { getTheme } from "@/lib/utils";
-import { IState } from "@/models/State";
 
 interface IConfigContext {
   isEnabled: boolean;

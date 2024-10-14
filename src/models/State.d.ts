@@ -1,6 +1,11 @@
 import type { ITheme } from "./Theme";
 
-export interface IState {
-  isEnabled: boolean;
-  activeTheme: ITheme;
+declare global {
+  interface IState {
+    isEnabled: boolean;
+    activeTheme: ITheme;
+  }
 }
+
+// make this file a module
+export {};
