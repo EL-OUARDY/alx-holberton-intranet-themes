@@ -14,10 +14,10 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { Separator } from "./ui/separator";
-import { useConfig } from "@/contexts/ConfigProvider";
+import { useContentTheme } from "@/contexts/ContentThemeProvider";
 
 function Header() {
-  const { isEnabled, toggleExtension } = useConfig();
+  const { isEnabled, toggleExtension } = useContentTheme();
 
   return (
     <div className="relative flex h-8 items-center rounded-md border border-input px-2">

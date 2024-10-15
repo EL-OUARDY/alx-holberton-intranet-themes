@@ -1,5 +1,5 @@
 {
-    "id": 2,
+    "id": "2",
     "name": "Visual Studio Light",
     "description": "Inspired by the default light color theme of Microsoft's Visual Studio Code editor.",
     "mode": "light",

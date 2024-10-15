@@ -1,5 +1,5 @@
 {
-    "id": 3,
+    "id": "3",
     "name": "Atlas Midnight",
     "description": "Atlas Midnight is a dark theme I created for my setup. I use it in ZSH, terminal, VIM, and VSCode for a sleek and consistent experience.",
     "mode": "dark",

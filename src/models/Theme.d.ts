@@ -1,5 +1,5 @@
 export interface ITheme {
-  id: number;
+  id: string;
   name: string;
   description: string;
   mode: "dark" | "light";
@@ -14,7 +14,7 @@ export interface ITheme {
 }
 
 export interface IThemesList {
-  id: number;
+  id: string;
   name: string;
   filename: string;
 }

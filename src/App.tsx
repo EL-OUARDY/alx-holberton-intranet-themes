@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Contribute from "./components/Contribute";
-import { ConfigProvider } from "./contexts/ConfigProvider";
+import { ContentThemeProvider } from "./contexts/ContentThemeProvider";
 import { PopupThemeProvider } from "./contexts/PopupThemeProvider";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       defaultPopupTheme="light"
       storageKey="intranet-popup-ui-theme"
     >
-      <ConfigProvider>
+      <ContentThemeProvider>
         <div className="flex h-screen flex-col" id="ext-popup">
           <div className="bg-background p-2 pb-0">
             <Header />
@@ -50,7 +50,7 @@ function App() {
             <Footer />
           </div>
         </div>
-      </ConfigProvider>
+      </ContentThemeProvider>
     </PopupThemeProvider>
   );
 }

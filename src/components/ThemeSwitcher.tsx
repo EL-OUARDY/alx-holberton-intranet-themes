@@ -12,16 +12,16 @@ import {
 import { useEffect, useState } from "react";
 import { getAvailableThemes } from "@/lib/utils";
 import { IThemesList } from "@/models/Theme";
-import { useConfig } from "@/contexts/ConfigProvider";
+import { useContentTheme } from "@/contexts/ContentThemeProvider";
 
 function ThemeSwitcher() {
-  const { activeTheme, changeTheme } = useConfig();
-  const [themesList, setThemeslist] = useState<IThemesList[]>();
+  const { activeTheme, changeTheme } = useContentTheme();
+  const [themesList, setThemeslist] = useState<IThemesList[]>([]);
 
   useEffect(() => {
     getAvailableThemes()
       .then((result) => {
-        result.sort((a, b) => a.id - b.id);
+        result.sort((a, b) => parseInt(a.id) - parseInt(b.id));
         setThemeslist(result);
       })
       .catch((error) => {
@@ -29,10 +29,15 @@ function ThemeSwitcher() {
       });
   }, []);
 
+  function onThemeChange(id: string) {
+    const filename = themesList.find((theme) => theme.id == id)?.filename;
+    changeTheme(filename as string);
+  }
+
   return (
     <Card className="h-full pt-4">
       <CardContent className="flex h-full flex-col gap-1 space-y-2 p-4 pt-0">
-        <Select onValueChange={(x) => changeTheme(x)}>
+        <Select onValueChange={onThemeChange} value={activeTheme?.id}>
           <SelectTrigger>
             <SelectValue placeholder="Select a Theme" />
           </SelectTrigger>
@@ -44,7 +49,7 @@ function ThemeSwitcher() {
                 <SelectItem
                   className="cursor-pointer"
                   key={theme.id}
-                  value={theme.filename}
+                  value={theme.id}
                 >
                   {theme.name}
                 </SelectItem>
