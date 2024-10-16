@@ -280,6 +280,11 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes .formatted-content pre {
+    color: var(--primary) !important;
+    background-color: var(--primary-background) !important;
+}
+
 .intanet-themes table,
 .intanet-themes table tr,
 .intanet-themes table td {
@@ -428,7 +433,7 @@
 
 }
 
-.intanet-themes:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
+.intanet-themes body:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
     width: 230px !important;
     margin-left: 10px !important;
     border-top: 1px solid var(--border) !important;
@@ -639,4 +644,43 @@ html.intanet-themes,
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
     border-color: var(--border) !important
+}
+
+/* Pagination */
+.intanet-themes .pagination .page-gap,
+.intanet-themes .pagination .disabled,
+.intanet-themes .pagination [aria-disabled=true],
+.intanet-themes .pagination .page-gap:hover,
+.intanet-themes .pagination .disabled:hover,
+.intanet-themes .pagination [aria-disabled=true]:hover {
+    border-color: transparent !important;
+    color: var(--primary) !important;
+    cursor: default !important;
+    opacity: 0.5 !important;
+}
+
+.intanet-themes .pagination .current,
+.intanet-themes .pagination .current:hover,
+.intanet-themes .pagination [aria-current]:not([aria-current=false]) {
+    background-color: var(--primary) !important;
+    border-color: transparent !important;
+    color: var(--primary-foreground) !important;
+}
+
+/* Concept Page */
+.intanet-themes #curriculum_navigation_content .formatted-content {
+    margin-left: 0 !important;
+}
+
+.intanet-themes .formatted-content h2 {
+    margin: 20px 0 !important
+}
+
+.intanet-themes .formatted-content code {
+    color: var(--primary) !important;
+    background-color: var(--primary-background) !important;
+}
+
+.intanet-themes .formatted-content img {
+    border-radius: 10px !important;
 }
