@@ -1,3 +1,465 @@
-body.intanet-themes {
-    background-color: var(--background) !important;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+    /* theme palette */
+    --primary-background: #212432;
+    --secondary-background: #292d3e;
+    --muted-background: #25293A;
+    --primary-foreground: #fff;
+    --secondary-foreground: #bfc7cf;
+    --muted-foreground: #8f7951;
+    --primary: #7e57c2cc;
+    --secondary: #ffcb64;
+    --success: #a6e88d;
+    --destructive: #ff5572;
+    --border: #2C2F40;
+    --button: #7e57c2cc;
+    --button-hover: #7e57c2;
+    --user-select-color: #212432;
+    --user-select-background: #7e57c2cc;
+
+
+    /* settings */
+    --logo-width: 60px;
+    --logo-height: 60px;
+
+    /* added by the script */
+    --logo-filter-invert: 1;
 }
+
+/* Global */
+.intanet-themes body {
+    background-color: var(--secondary-background) !important;
+    color: var(--primary-foreground) !important;
+    font-family: 'Inter', "aktiv-grotesk", sans-serif !important;
+}
+
+.intanet-themes ::selection {
+    color: var(--user-select-color) !important;
+    background-color: var(--user-select-background) !important;
+}
+
+.intanet-themes input,
+.intanet-themes .form-control {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--primary-background) !important;
+    box-shadow: none !important;
+
+}
+
+.intanet-themes a {
+    color: var(--primary) !important;
+}
+
+.intanet-themes * {
+    border-color: var(--border) !important;
+}
+
+.intanet-themes button,
+.intanet-themes .btn.btn-default,
+.intanet-themes input[type="submit"] {
+    background-color: var(--button) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--button-hover) !important;
+    outline: none !important;
+}
+
+.intanet-themes button:hover,
+.intanet-themes .btn.btn-default:hover,
+.intanet-themes input[type="submit"]:hover {
+    background-color: var(--button-hover) !important;
+    color: var(--primary-foreground) !important;
+    border-color: var(--button-hover);
+}
+
+.intanet-themes .bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.intanet-themes .list-group-item {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .panel {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .panel.panel-default .panel-heading .panel-title {
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .panel.panel-default {
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .text-muted {
+    color: var(--muted-foreground) !important;
+}
+
+.intanet-themes .dropdown-menu {
+    background-color: var(--secondary-background) !important;
+}
+
+.intanet-themes .dropdown-menu>li>a {
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .dropdown-menu>li .text-muted {
+    color: var(--success) !important;
+    margin-top: 4px;
+}
+
+.intanet-themes .dropdown-menu>li a:hover {
+    background-color: var(--muted-background) !important;
+}
+
+.intanet-themes hr {
+    border-color: var(--border) !important;
+}
+
+.intanet-themes h1,
+.intanet-themes h2 {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .form-control {
+    height: initial;
+}
+
+.intanet-themes .gap {
+    margin-top: 25px !important;
+}
+
+.intanet-themes .label.label-info,
+.intanet-themes .label.label-default,
+.intanet-themes .alert.alert-info {
+    background-color: var(--secondary-background) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .label.label-success,
+.intanet-themes .alert.alert-success {
+    background-color: var(--success) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .label.label-primary,
+.intanet-themes .alert.alert-primary {
+    background-color: var(--primary) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .well {
+    background-color: var(--primary-background) !important;
+    color: var(--success) !important;
+}
+
+.intanet-themes code {
+    background-color: var(--secondary-background) !important;
+    color: var(--primary) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes table,
+.intanet-themes table tr,
+.intanet-themes table td {
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .text-success {
+    color: var(--success) !important;
+}
+
+.intanet-themes .modal .modal-content {
+    background-color: var(--secondary-background) !important;
+}
+
+.intanet-themes .modal .modal-content .modal-title {
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .modal .modal-content .modal-header button.close {
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .modal .modal-content .modal-header {
+    border-color: var(--primary-background) !important;
+}
+
+.intanet-themes .copyright {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes label.control-label {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .help-block {
+    color: var(--muted-foreground) !important;
+}
+
+.intanet-themes .help-block code {
+    background-color: var(--primary-background) !important;
+    color: var(--primary) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--button);
+    color: var(--secondary-foreground) !important;
+    border: var(--border) !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+
+/* Header */
+.intanet-themes .header,
+.intanet-themes .navbar {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .header .header-left .hamburger,
+.intanet-themes .navbar .navbar-toggle {
+    color: var(--secondary-foreground) !important;
+    font-size: 22px !important;
+    border: 0 !important;
+}
+
+.intanet-themes .header .header-left .hamburger:hover,
+.intanet-themes .navbar .navbar-toggle {
+    color: var(--primary-foreground) !important;
+    background-color: transparent !important;
+}
+
+.intanet-themes .header .logo,
+.intanet-themes .navbar .logo {
+    /* Ensure the logo matches the theme mode */
+    filter: invert(var(--logo-filter-invert)) !important;
+    width: var(--logo-width) !important;
+    height: var(--logo-height) !important;
+}
+
+.intanet-themes .navbar-default .navbar-collapse,
+.intanet-themes .navbar-default .navbar-form {
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .navigation>ul>li a .visible-xs {
+    color: var(--secondary-foreground) !important;
+}
+
+/* Sidebar */
+.intanet-themes .sidebar {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important;
+
+}
+
+.intanet-themes .sidebar a {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .sidebar>ul>li:has(.active) {
+    background-color: var(--muted-background) !important;
+    color: var(--primary) !important;
+    font-weight: bold !important;
+}
+
+.intanet-themes .sidebar>ul>li:hover {
+    background-color: var(--muted-background) !important;
+}
+
+.intanet-themes .sidebar>ul>li:hover * {
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .sidebar>ul>li:has(.active):hover * {
+    color: var(--primary) !important;
+}
+
+.intanet-themes .navigation>ul>li a .icon.active,
+.intanet-themes .navigation>ul>li a .image.active {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+}
+
+.intanet-themes .sidebar.navigation>ul>li:last-of-type {
+    background-color: var(--secondary-background) !important;
+    border: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+}
+
+.intanet-themes:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
+    width: 230px !important;
+    margin-left: 10px !important;
+    border-top: 1px solid var(--border) !important;
+    padding: 5px 0 !important;
+}
+
+.intanet-themes .navigation>ul>li .text-muted {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .navigation>ul>li .text-muted:hover {
+    color: var(--primary-foreground) !important;
+}
+
+/* Score Bar */
+.intanet-themes #student-switch-curriculum {
+    background-color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+
+.intanet-themes #student-switch-curriculum .text-muted {
+    color: var(--secondary) !important;
+}
+
+.intanet-themes #student-switch-curriculum-dropdown .text-muted {
+    color: var(--success) !important;
+    margin-top: 4px;
+}
+
+.intanet-themes .fa-angle-up,
+.intanet-themes .fa-angle-down {
+    color: var(--secondary-foreground) !important;
+}
+
+/* Dashboard */
+.intanet-themes time {
+    background-color: var(--secondary-background) !important;
+    box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
+}
+
+.intanet-themes time span {
+    color: var(--secondary-foreground) !important;
+    font-size: 2em !important;
+}
+
+.intanet-themes .panel .bpi-status span.datetime {
+    color: var(--muted-foreground) !important;
+}
+
+.intanet-themes .panel .bpi-status strong {
+    font-weight: normal !important;
+}
+
+.intanet-themes .panel.user-reports-card~.panel .panel-heading span.font-weight-bold {
+    /* Scores' panel */
+    color: var(--success) !important;
+    font-weight: normal !important;
+}
+
+.intanet-themes .panel .fa-calendar {
+    color: var(--secondary-background) !important;
+}
+
+.intanet-themes .panel .fa-clock,
+.intanet-themes .panel .fa-location-dot {
+    color: var(--primary) !important;
+}
+
+.intanet-themes .student-home .paced .panel .panel-body {
+    margin-top: 10px !important;
+}
+
+/* Score popup */
+.intanet-themes .student-home .modal .modal-content table a {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .student-home .modal .modal-content table tr.bg-primary {
+    background-color: var(--primary) !important;
+    color: var(--primary-background) !important;
+    font-weight: bold !important;
+    border: 2px solid var(--primary) !important;
+}
+
+.intanet-themes .student-home .modal .modal-content table tr.bg-primary td.text-right {
+    background-color: var(--primary-background) !important;
+    color: var(--success) !important;
+}
+
+
+.intanet-themes .student-home .modal .modal-content table tr td.text-right {
+    color: var(--muted-foreground) !important;
+    font-weight: bold !important;
+}
+
+/* Custom scroll bar */
+.intanet-themes *::-webkit-scrollbar-track {
+    background-color: var(--primary-background);
+    border-radius: 8px;
+}
+
+.intanet-themes *::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--primary-background);
+}
+
+.intanet-themes *::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--primary);
+}
+
+html.intanet-themes,
+.intanet-themes body {
+    /* hide scrollbar of the body/html */
+    /* For Firefox */
+    scrollbar-width: none !important;
+    /* For Internet Explorer and Edge */
+    -ms-overflow-style: none !important;
+}
+
+#cody-wrapper .cody-launcher body::-webkit-scrollbar {
+    /* For Chrome, Safari, and other WebKit browsers */
+    display: none !important;
+}
+
+/* Search */
+.intanet-themes #search-button {
+    color: var(--primary) !important;
+    background-color: var(--secondary-background) !important;
+}
+
+.intanet-themes #search-bar {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--button) !important;
+    border-color: var(--button-hover) !important;
+}
+
+/* Assistant button */
+.intanet-themes #cody-wrapper .cody-launcher {
+    color: var(--primary) !important;
+    background-color: var(--secondary-background) !important;
+    animation: none !important;
+    box-shadow: none !important;
+    border: 2px solid var(--primary) !important;
+}
+
+/* Profile Page */
+.intanet-themes a.btn[href="/auth/sign_out"] {
+    background-color: var(--destructive) !important;
+    color: var(--primary-foreground) !important;
+    border: 0 !important;
+    margin-bottom: 40px !important;
+}
+
+.intanet-themes a.btn[href="/auth/sign_out"]:hover {
+    background-color: var(--destructive) !important;
+    color: var(--primary-foreground) !important;
+}
+
+/* Student Working Statuse Page */

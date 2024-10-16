@@ -17,7 +17,7 @@ import { Separator } from "./ui/separator";
 import { useContentTheme } from "@/contexts/ContentThemeProvider";
 
 function Header() {
-  const { isEnabled, toggleExtension } = useContentTheme();
+  const { isEnabled, toggleExtension, activeTheme } = useContentTheme();
 
   return (
     <div className="relative flex h-8 items-center rounded-md border border-input px-2">
@@ -58,7 +58,11 @@ function Header() {
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="z-10 ml-auto flex">
-              <Switch checked={isEnabled} onCheckedChange={toggleExtension} />
+              <Switch
+                checked={isEnabled}
+                onCheckedChange={toggleExtension}
+                disabled={!activeTheme}
+              />
             </div>
           </TooltipTrigger>
           <TooltipContent side="bottom">
