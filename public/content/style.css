@@ -11,11 +11,21 @@
     --muted-foreground: #8f7951;
     --primary: #7e57c2cc;
     --secondary: #ffcb64;
+    --info: #82AAFF;
     --success: #a6e88d;
     --destructive: #ff5572;
     --border: #2C2F40;
+
     --button: #7e57c2cc;
     --button-hover: #7e57c2;
+    --success-button: #a6e88d;
+    --success-button-hover: #b3f49c;
+    --secondary-button: #ffcb64;
+    --secondary-button-hover: #ffd787;
+    --destructive-button: #ff5572;
+    --destructive-button-hover: #f8798e;
+
+
     --user-select-color: #212432;
     --user-select-background: #7e57c2cc;
 
@@ -31,7 +41,7 @@
 /* Global */
 .intanet-themes body {
     background-color: var(--secondary-background) !important;
-    color: var(--primary-foreground) !important;
+    color: var(--secondary-foreground) !important;
     font-family: 'Inter', "aktiv-grotesk", sans-serif !important;
 }
 
@@ -57,6 +67,10 @@
     box-shadow: none !important;
 }
 
+.intanet-themes small {
+    color: var(--secondary-foreground) !important;
+}
+
 .intanet-themes button,
 .intanet-themes .btn.btn-default,
 .intanet-themes input[type="submit"] {
@@ -64,6 +78,69 @@
     color: var(--secondary-foreground) !important;
     border-color: var(--button-hover) !important;
     outline: none !important;
+}
+
+.intanet-themes .text-primary {
+    color: var(--primary) !important;
+}
+
+.intanet-themes .text-success {
+    color: var(--success) !important;
+}
+
+.intanet-themes .text-danger {
+    color: var(--destructive) !important;
+}
+
+.intanet-themes .btn-outline-primary {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    outline: none !important;
+}
+
+.intanet-themes .btn-outline-primary:hover {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.intanet-themes .btn-success {
+    background-color: var(--success-button) !important;
+    color: var(--secondary-background) !important;
+    border-color: var(--success-button-hover) !important;
+    outline: none !important;
+}
+
+.intanet-themes .btn-success:hover {
+    background-color: var(--success-button-hover) !important;
+    color: var(--primary-background) !important;
+}
+
+.intanet-themes .btn-secondary,
+.intanet-themes .btn-warning {
+    background-color: var(--secondary-button) !important;
+    color: var(--secondary-background) !important;
+    border-color: var(--secondary-button-hover) !important;
+    outline: none !important;
+}
+
+.intanet-themes .btn-secondary:hover,
+.intanet-themes .btn-warning:hover {
+    background-color: var(--secondary-button-hover) !important;
+    color: var(--primary-background) !important;
+}
+
+.intanet-themes .btn-danger {
+    background-color: var(--destructive-button) !important;
+    color: var(--secondary-background) !important;
+    border-color: var(--destructive-button-hover) !important;
+    outline: none !important;
+}
+
+.intanet-themes .btn-danger:hover {
+    background-color: var(--destructive-button-hover) !important;
+    color: var(--primary-background) !important;
 }
 
 .intanet-themes button:hover,
@@ -199,10 +276,6 @@
     border-color: var(--border) !important;
 }
 
-.intanet-themes .text-success {
-    color: var(--success) !important;
-}
-
 .intanet-themes .modal .modal-content {
     background-color: var(--secondary-background) !important;
 }
@@ -212,6 +285,7 @@
 }
 
 .intanet-themes .modal .modal-content .modal-header button.close {
+    background-color: transparent !important;
     color: var(--primary-foreground) !important;
 }
 
@@ -245,6 +319,13 @@
     cursor: pointer !important;
 }
 
+.intanet-themes .border-left-success {
+    border-left-color: var(--success) !important;
+}
+
+.intanet-themes .border-left-info {
+    border-left-color: var(--info) !important;
+}
 
 /* Header */
 .intanet-themes .header,
@@ -404,7 +485,8 @@
 
 .intanet-themes .panel .fa-clock,
 .intanet-themes .panel .fa-location-dot {
-    color: var(--primary) !important;
+    color: var(--info) !important;
+    opacity: 0.8 !important;
 }
 
 .intanet-themes .student-home .paced .panel .panel-body {
@@ -491,21 +573,21 @@ html.intanet-themes,
 
 /* Profile Page */
 .intanet-themes a.btn[href="/auth/sign_out"] {
-    background-color: var(--destructive) !important;
+    background-color: var(--destructive-button) !important;
+    border-color: var(--destructive-button-hover) !important;
     color: var(--primary-foreground) !important;
-    border: 0 !important;
     margin-bottom: 40px !important;
 }
 
 .intanet-themes a.btn[href="/auth/sign_out"]:hover {
-    background-color: var(--destructive) !important;
+    background-color: var(--destructive-button-hover) !important;
     color: var(--primary-foreground) !important;
 }
 
 /* Peers Page */
 .intanet-themes table.students-table {
     color: var(--secondary-foreground) !important;
-
+    border-radius: 10px !important;
 }
 
 .intanet-themes table.students-table tr {
@@ -524,4 +606,21 @@ html.intanet-themes,
     padding: 10px 20px !important;
     border-radius: 10px !important;
     width: max-content !important;
+}
+
+/* Sandboxes Page */
+.intanet-themes .sandboxes-filters .btn-primary {
+    background: var(--button) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .btn-webterm,
+.intanet-themes .btn-webterm:hover {
+    background-color: var(--secondary-background) !important;
+    color: var(--success) !important;
+    border-color: var(--success) !important;
+}
+
+.intanet-themes .btn-webterm>i[class^='fa-'] {
+    color: var(--success) !important;
 }
