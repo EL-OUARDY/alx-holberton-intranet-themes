@@ -54,6 +54,7 @@
 
 .intanet-themes * {
     border-color: var(--border) !important;
+    box-shadow: none !important;
 }
 
 .intanet-themes button,
@@ -95,6 +96,16 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes .panel-default>.panel-heading {
+    color: var(--secondary-background) !important;
+    background-color: var(--primary-background) !important;
+}
+
+.panel.panel-default .panel-heading .panel-title i.panel-title-icon {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--secondary-background) !important;
+}
+
 .intanet-themes .text-muted {
     color: var(--muted-foreground) !important;
 }
@@ -120,6 +131,17 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes table img {
+    border-radius: 5px !important;
+}
+
+.intanet-themes img.placeholder-user {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+
 .intanet-themes h1,
 .intanet-themes h2 {
     color: var(--secondary-foreground) !important;
@@ -131,6 +153,11 @@
 
 .intanet-themes .gap {
     margin-top: 25px !important;
+}
+
+.intanet-themes .user-reports-card .alert {
+    border: 0 !important;
+    padding: 10px 24px 0px !important;
 }
 
 .intanet-themes .label.label-info,
@@ -284,7 +311,16 @@
 }
 
 .intanet-themes .sidebar>ul>li:has(.active):hover * {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .sidebar>ul>li:has(.active):hover .icon i {
     color: var(--primary) !important;
+}
+
+.intanet-themes .sidebar>ul>li:hover .fa-discord {
+    /*Discord icon*/
+    color: #5865f2 !important;
 }
 
 .intanet-themes .navigation>ul>li a .icon.active,
@@ -372,7 +408,7 @@
 }
 
 .intanet-themes .student-home .paced .panel .panel-body {
-    margin-top: 10px !important;
+    margin-top: 0px !important;
 }
 
 /* Score popup */
@@ -449,6 +485,10 @@ html.intanet-themes,
     border: 2px solid var(--primary) !important;
 }
 
+.intanet-themes #cody-wrapper .cody-launcher:hover {
+    scale: 1 !important;
+}
+
 /* Profile Page */
 .intanet-themes a.btn[href="/auth/sign_out"] {
     background-color: var(--destructive) !important;
@@ -462,4 +502,26 @@ html.intanet-themes,
     color: var(--primary-foreground) !important;
 }
 
-/* Student Working Statuse Page */
+/* Peers Page */
+.intanet-themes table.students-table {
+    color: var(--secondary-foreground) !important;
+
+}
+
+.intanet-themes table.students-table tr {
+    background-color: var(--primary-background) !important;
+    margin-bottom: 20px !important;
+}
+
+.intanet-themes .universal-pagination {
+    bottom: unset !important;
+    float: unset !important;
+    position: unset !important;
+    display: flex !important;
+    gap: 10px !important;
+    color: var(--secondary-foreground) !important;
+    background: var(--primary-background) !important;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+    width: max-content !important;
+}
