@@ -208,6 +208,16 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes table {
+    color: var(--secondary-foreground) !important;
+    border-radius: 10px !important;
+}
+
+.intanet-themes table tr {
+    background-color: var(--primary-background) !important;
+    margin-bottom: 20px !important;
+}
+
 .intanet-themes table img {
     border-radius: 5px !important;
 }
@@ -585,15 +595,6 @@ html.intanet-themes,
 }
 
 /* Peers Page */
-.intanet-themes table.students-table {
-    color: var(--secondary-foreground) !important;
-    border-radius: 10px !important;
-}
-
-.intanet-themes table.students-table tr {
-    background-color: var(--primary-background) !important;
-    margin-bottom: 20px !important;
-}
 
 .intanet-themes .universal-pagination {
     bottom: unset !important;
@@ -623,4 +624,19 @@ html.intanet-themes,
 
 .intanet-themes .btn-webterm>i[class^='fa-'] {
     color: var(--success) !important;
+}
+
+/* Conferencing Rooms Page */
+.intanet-themes .panel.video-rooms-head .btn-info,
+.intanet-themes .panel.video-rooms-head .btn-info:hover {
+    background-color: var(--secondary-background) !important;
+    color: var(--info) !important;
+    border-color: var(--border) !important
+}
+
+.intanet-themes .panel.video-rooms-head .btn-default,
+.intanet-themes .panel.video-rooms-head .btn-default:hover {
+    background-color: var(--secondary-background) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important
 }
