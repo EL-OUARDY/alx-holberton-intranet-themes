@@ -174,7 +174,7 @@
 }
 
 .intanet-themes .panel-default>.panel-heading {
-    color: var(--secondary-background) !important;
+    color: var(--secondary-foreground) !important;
     background-color: var(--primary-background) !important;
 }
 
@@ -285,10 +285,11 @@
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes table,
-.intanet-themes table tr,
-.intanet-themes table td {
+.intanet-themes table:not(.intanet-themes body>table),
+.intanet-themes table tr:not(.intanet-themes body>table tr),
+.intanet-themes table td:not(.intanet-themes body>table td) {
     border-color: var(--border) !important;
+    background-color: var(--primary-background) !important;
 }
 
 .intanet-themes .modal .modal-content {
@@ -426,7 +427,7 @@
 }
 
 .intanet-themes .sidebar.navigation>ul>li:last-of-type {
-    background-color: var(--secondary-background) !important;
+    background-color: var(--primary-background) !important;
     border: 0 !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -434,10 +435,15 @@
 }
 
 .intanet-themes body:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
+    background-color: var(--secondary-background) !important;
     width: 230px !important;
     margin-left: 10px !important;
     border-top: 1px solid var(--border) !important;
     padding: 5px 0 !important;
+}
+
+.intanet-themes body.sidebar-collapsed .sidebar.navigation>ul>li:last-of-type {
+    width: 69.2px !important;
 }
 
 .intanet-themes .navigation>ul>li .text-muted {
@@ -505,7 +511,11 @@
 }
 
 .intanet-themes .student-home .paced .panel .panel-body {
-    margin-top: 0px !important;
+    margin-top: 10px !important;
+}
+
+.intanet-themes .student-home .panel {
+    border-radius: 10px !important;
 }
 
 /* Score popup */
@@ -683,4 +693,128 @@ html.intanet-themes,
 
 .intanet-themes .formatted-content img {
     border-radius: 10px !important;
+}
+
+/* Curriculums Page */
+.intanet-themes .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    background-color: var(--primary-background) !important;
+}
+
+/* Student Transcript */
+@media screen,
+print {
+    .intanet-themes body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .intanet-themes body>table img:not(img[alt="user image"]) {
+        filter: invert(var(--logo-filter-invert)) !important;
+    }
+
+    .intanet-themes body>table td {
+        padding: 6px 20px !important;
+        background: transparent !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>div,
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div {
+        background-color: var(--primary-background) !important;
+        border-color: var(--border) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr .btn-group.font-weight-bold {
+        color: var(--success) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2) {
+        color: var(--secondary) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2)::before {
+        background-color: var(--primary-background) !important;
+        color: var(--secondary) !important;
+        margin-right: 10px !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(3)::before {
+        background-color: var(--primary-background) !important;
+        color: var(--secondary) !important;
+        margin-right: 10px !important;
+
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4) {
+        color: var(--secondary-foreground) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4)::before {
+        background-color: var(--primary-background) !important;
+        color: var(--secondary) !important;
+        margin-right: 10px !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2) {
+        color: var(--secondary) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2)::before {
+        background-color: var(--primary-background) !important;
+        color: var(--secondary) !important;
+        margin-right: 10px !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div>table>thead>tr>th {
+        background-color: var(--primary-background) !important;
+        ;
+        border-color: var(--border) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+        background-color: var(--primary-background) !important;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr:last-child>td {
+        background-color: var(--primary-background) !important;
+        border-bottom: 1px solid var(--primary-background);
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td {
+        background-color: var(--primary-background) !important;
+        border-color: var(--border) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div.panel-heading>h3 {
+        background-color: var(--primary-background) !important;
+        border-color: var(--border) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td,
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+        color: var(--info) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td:first-child {
+        color: var(--secondary-foreground) !important;
+    }
+
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td,
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+        color: var(--info) !important;
+    }
+
+    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td:first-child {
+        color: var(--secondary-foreground) !important;
+    }
+}
+
+.intanet-themes .table_width {
+    width: 100%;
+}
+
+.intanet-themes .td_key_styles {
+    color: var(--info) !important;
 }
