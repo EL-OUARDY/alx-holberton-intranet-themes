@@ -248,10 +248,15 @@
 }
 
 .intanet-themes .label.label-info,
-.intanet-themes .label.label-default,
-.intanet-themes .alert.alert-info {
+.intanet-themes .label.label-default {
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .alert.alert-info {
+    background-color: var(--primary-background) !important;
+    color: var(--info) !important;
     border-color: var(--border) !important;
 }
 
@@ -272,6 +277,10 @@
 .intanet-themes .well {
     background-color: var(--primary-background) !important;
     color: var(--success) !important;
+}
+
+.intanet-themes .fs-small {
+    font-size: 14px !important;
 }
 
 .intanet-themes code {
@@ -476,12 +485,12 @@
 }
 
 /* Dashboard */
-.intanet-themes time {
+.intanet-themes #student-home-events-card time {
     background-color: var(--secondary-background) !important;
     box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
 }
 
-.intanet-themes time span {
+.intanet-themes #student-home-events-card time span {
     color: var(--secondary-foreground) !important;
     font-size: 2em !important;
 }
@@ -817,4 +826,40 @@ print {
 
 .intanet-themes .td_key_styles {
     color: var(--info) !important;
+}
+
+/* Event Page */
+.intanet-themes time {
+    background-color: var(--primary-background) !important;
+    box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
+}
+
+.intanet-themes time span {
+    color: var(--secondary-foreground) !important;
+    font-size: 2em !important;
+}
+
+.intanet-themes time span.text-primary {
+    color: var(--secondary-foreground) !important;
+    font-size: 1em !important;
+    margin-bottom: 5px !important;
+}
+
+/* Projects Page */
+.intanet-themes .project_progress_percentage.alert.alert-info {
+    background-color: var(--info) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes #current-projects-list-blocks li a {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes #current-projects-list-blocks li strong {
+    color: var(--success) !important;
+}
+
+.intanet-themes #current-projects-list-blocks li em {
+    color: var(--secondary) !important;
 }
