@@ -80,6 +80,11 @@
     outline: none !important;
 }
 
+.intanet-themes span.datetime {
+    color: var(--secondary) !important;
+    font-weight: normal !important;
+}
+
 .intanet-themes .text-primary {
     color: var(--primary) !important;
 }
@@ -453,6 +458,13 @@
 
 .intanet-themes body.sidebar-collapsed .sidebar.navigation>ul>li:last-of-type {
     width: 69.2px !important;
+}
+
+.intanet-themes body.sidebar-collapsed .sidebar.navigation>ul>li {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .intanet-themes .navigation>ul>li .text-muted {
@@ -847,7 +859,7 @@ print {
 
 /* Projects Page */
 .intanet-themes .project_progress_percentage.alert.alert-info {
-    background-color: var(--info) !important;
+    background-color: var(--secondary) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
@@ -863,3 +875,5 @@ print {
 .intanet-themes #current-projects-list-blocks li em {
     color: var(--secondary) !important;
 }
+
+/* Single Project Page */
