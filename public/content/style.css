@@ -73,6 +73,7 @@
 
 .intanet-themes button,
 .intanet-themes .btn.btn-default,
+.intanet-themes .btn.btn-primary,
 .intanet-themes input[type="submit"] {
     background-color: var(--button) !important;
     color: var(--secondary-foreground) !important;
@@ -290,6 +291,12 @@
 .intanet-themes .alert.alert-primary {
     background-color: var(--primary) !important;
     color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .alert.alert-danger {
+    background-color: var(--primary-background) !important;
+    color: var(--destructive) !important;
     border-color: var(--border) !important;
 }
 
@@ -558,6 +565,14 @@
 
 .intanet-themes .student-home .panel {
     border-radius: 10px !important;
+}
+
+.intanet-themes .modal table td.text-right.font-weight-bold {
+    color: var(--success) !important;
+}
+
+.intanet-themes .modal table td.text-right {
+    color: var(--secondary) !important;
 }
 
 /* Score popup */
@@ -913,4 +928,37 @@ print {
 
 .intanet-themes .border-primary.rounded-circle {
     border: 2px solid var(--primary) !important;
+}
+
+/* Login Page */
+
+.intanet-themes main#content:has(.logged_out_form) {
+    margin: 0 !important;
+}
+
+.intanet-themes main#content:has(.logged_out_form) article {
+    padding: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.intanet-themes main#content .logged_out_form {
+    background-color: var(--primary-background) !important;
+    border: 2px solid var(--primary) !important;
+    height: fit-content !important;
+}
+
+.intanet-themes main#content .logged_out_form h2.hbtn_logo {
+    filter: invert(var(--logo-filter-invert)) !important;
+}
+
+.intanet-themes main#content .logged_out_form .btn {
+    width: 100% !important;
+}
+
+.intanet-themes main#content .logged_out_form .field {
+    text-align: left !important;
 }
