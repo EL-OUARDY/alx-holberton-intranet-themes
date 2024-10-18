@@ -23,7 +23,7 @@
     --secondary-button: #ffcb64;
     --secondary-button-hover: #ffd787;
     --destructive-button: #ff5572;
-    --destructive-button-hover: #f8798e;
+    --destructive-button-hover: #e45d74;
 
 
     --user-select-color: #212432;
@@ -81,7 +81,7 @@
 }
 
 .intanet-themes span.datetime {
-    color: var(--secondary) !important;
+    color: var(--muted-foreground) !important;
     font-weight: normal !important;
 }
 
@@ -178,6 +178,10 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes .panel.panel-default li.list-group-item ul {
+    margin-top: 5px !important;
+}
+
 .intanet-themes .panel-default>.panel-heading {
     color: var(--secondary-foreground) !important;
     background-color: var(--primary-background) !important;
@@ -227,6 +231,10 @@
     border-radius: 5px !important;
 }
 
+.intanet-themes .border-primary {
+    border-color: var(--primary) !important;
+}
+
 .intanet-themes img.placeholder-user {
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -265,6 +273,12 @@
     border-color: var(--border) !important;
 }
 
+.intanet-themes .label.label-warning {
+    background-color: var(--secondary) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
 .intanet-themes .label.label-success,
 .intanet-themes .alert.alert-success {
     background-color: var(--success) !important;
@@ -289,9 +303,10 @@
 }
 
 .intanet-themes code {
-    background-color: var(--secondary-background) !important;
-    color: var(--primary) !important;
-    border-color: var(--border) !important;
+    background-color: var(--secondary) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--secondary-button-hover) !important;
+    margin-right: 5px !important;
 }
 
 .intanet-themes .formatted-content pre {
@@ -499,12 +514,18 @@
 /* Dashboard */
 .intanet-themes #student-home-events-card time {
     background-color: var(--secondary-background) !important;
-    box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
+    box-shadow: none !important;
+    height: 6em !important;
+    width: 6em !important;
 }
 
 .intanet-themes #student-home-events-card time span {
     color: var(--secondary-foreground) !important;
     font-size: 2em !important;
+}
+
+.intanet-themes #student-home-events-card time strong {
+    font-size: 1.5em !important;
 }
 
 .intanet-themes .panel .bpi-status span.datetime {
@@ -844,22 +865,29 @@ print {
 .intanet-themes time {
     background-color: var(--primary-background) !important;
     box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
+    height: 4em !important;
+    width: 4em !important;
+}
+
+.intanet-themes time strong {
+    font-size: 0.6em !important;
+    line-height: 1.6em !important;
 }
 
 .intanet-themes time span {
     color: var(--secondary-foreground) !important;
-    font-size: 2em !important;
+    font-size: 1.5em !important;
 }
 
 .intanet-themes time span.text-primary {
     color: var(--secondary-foreground) !important;
-    font-size: 1em !important;
+    font-size: 0.6em !important;
     margin-bottom: 5px !important;
 }
 
 /* Projects Page */
 .intanet-themes .project_progress_percentage.alert.alert-info {
-    background-color: var(--secondary) !important;
+    background-color: var(--info) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
@@ -877,3 +905,12 @@ print {
 }
 
 /* Single Project Page */
+
+/* Peer Learning Day */
+.intanet-themes .panel.panel-default .panel-title .v-stack.gap-2 .hstack.gap-2 {
+    margin-top: 4px !important;
+}
+
+.intanet-themes .border-primary.rounded-circle {
+    border: 2px solid var(--primary) !important;
+}
