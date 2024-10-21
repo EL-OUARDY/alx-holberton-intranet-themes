@@ -274,6 +274,11 @@
     padding: 10px 24px 0px !important;
 }
 
+.intanet-themes .modal[data-model-path="user_report"] .list-group-item {
+    margin-top: 10px !important;
+}
+
+
 .intanet-themes .label.label-info,
 .intanet-themes .label.label-default {
     background-color: var(--secondary-background) !important;
@@ -525,15 +530,19 @@
     border-color: var(--border) !important;
 }
 
-
 .intanet-themes #student-switch-curriculum .text-muted {
-    color: var(--secondary) !important;
-}
-
-.intanet-themes #student-switch-curriculum-dropdown .text-muted {
     color: var(--success) !important;
     margin-top: 4px;
 }
+
+.intanet-themes #student-switch-curriculum ul .text-muted {
+    color: var(--secondary) !important;
+}
+
+.intanet-themes #student-switch-curriculum .dropdown-menu {
+    background-color: var(--primary-background) !important;
+}
+
 
 .intanet-themes .fa-angle-up,
 .intanet-themes .fa-angle-down {
@@ -571,8 +580,8 @@
     font-weight: normal !important;
 }
 
-.intanet-themes .panel .fa-calendar {
-    color: var(--secondary-background) !important;
+.intanet-themes .student-home .panel .fa-calendar {
+    color: var(--primary-accent) !important;
 }
 
 .intanet-themes .panel .fa-clock,
@@ -1215,4 +1224,131 @@ print {
 
 .intanet-themes main#content .logged_out_form .field {
     text-align: left !important;
+}
+
+/* My Planning Page / Calendar */
+.intanet-themes .dhx_cal_container {
+    background-color: var(--primary-background) !important;
+    border-radius: 10px !important;
+}
+
+.intanet-themes .dhx_cal_header {
+    border: 1px solid var(--border);
+}
+
+.intanet-themes .dhx_cal_prev_button,
+.intanet-themes .dhx_cal_next_button {
+    background: none !important;
+    border-color: var(--primary) !important;
+    color: var(--primary);
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 15px !important;
+    text-indent: -9999px !important;
+}
+
+.intanet-themes .dhx_cal_prev_button::before {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+    content: "\f060" !important;
+    text-indent: 0 !important;
+}
+
+.intanet-themes .dhx_cal_next_button::before {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+    content: "\f061" !important;
+    text-indent: 0 !important;
+}
+
+.intanet-themes .dhx_cal_today_button {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.intanet-themes .dhx_cal_my_button {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.intanet-themes .dhx_cal_navline .dhx_cal_date,
+.intanet-themes .dhx_cal_tab {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .dhx_cal_navline .dhx_cal_tab.active,
+.intanet-themes .dhx_cal_navline .dhx_cal_my_button.active {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.intanet-themes .dhx_cal_data {
+    border-top: 1px solid var(--border);
+}
+
+.intanet-themes .dhx_scale_bar {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+}
+
+.intanet-themes .dhx_after .dhx_month_head,
+.intanet-themes .dhx_before .dhx_month_head {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .dhx_after .dhx_month_body,
+.intanet-themes .dhx_after .dhx_month_head,
+.intanet-themes .dhx_before .dhx_month_body,
+.intanet-themes .dhx_before .dhx_month_head,
+.intanet-themes .dhx_month_head,
+.intanet-themes .dhx_month_body {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes .dhx_multi_day,
+.intanet-themes .dhx_multi_day_icon,
+.intanet-themes .dhx_multi_day_icon_small {
+    background-color: var(--primary-background) !important;
+}
+
+
+.intanet-themes .modal#dhtmlx-filter-modal .modal-body button {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--border) !important;
+    padding: 6px 20px !important;
+}
+
+.intanet-themes .dhx_multi_day_icon {
+    background: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 20px !important;
+}
+
+.intanet-themes .dhx_multi_day_icon:before {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+    content: "\f017" !important;
+}
+
+.intanet-themes .dhx_scale_hour {
+    color: var(--secondary-foreground) !important;
+    background-color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .dhx_scale_holder,
+.intanet-themes .dhx_scale_holder_now {
+    background: transparent !important;
+}
+
+.intanet-themes .dhtmlXTooltip.tooltip {
+    border-color: var(--border) !important;
+    color: var(--secondary-foreground) !important;
+    background-color: var(--secondary-background) !important;
 }
