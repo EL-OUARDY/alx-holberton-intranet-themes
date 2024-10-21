@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-
 :root {
     /* theme palette */
     --primary-background: #212432;
@@ -10,11 +7,15 @@
     --secondary-foreground: #bfc7cf;
     --muted-foreground: #8f7951;
     --primary: #7e57c2cc;
+    --primary-accent: #6c4da55c;
     --secondary: #ffcb64;
     --info: #82AAFF;
     --success: #a6e88d;
     --destructive: #ff5572;
     --border: #2C2F40;
+
+    --code-background: #292d3e;
+    --code-foreground: #a6e88d;
 
     --button: #7e57c2cc;
     --button-hover: #7e57c2;
@@ -26,8 +27,8 @@
     --destructive-button-hover: #e45d74;
 
 
-    --user-select-color: #212432;
-    --user-select-background: #7e57c2cc;
+    --user-text-select-color: #212432;
+    --user-text-select-background: #7e57c2cc;
 
 
     /* settings */
@@ -42,12 +43,11 @@
 .intanet-themes body {
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
-    font-family: 'Inter', "aktiv-grotesk", sans-serif !important;
 }
 
 .intanet-themes ::selection {
-    color: var(--user-select-color) !important;
-    background-color: var(--user-select-background) !important;
+    color: var(--user-text-select-color) !important;
+    background-color: var(--user-text-select-background) !important;
 }
 
 .intanet-themes input,
@@ -69,6 +69,10 @@
 
 .intanet-themes small {
     color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes li.list-group-item i {
+    margin-right: 5px !important;
 }
 
 .intanet-themes button,
@@ -166,9 +170,18 @@
     color: var(--secondary-foreground) !important;
 }
 
+.intanet-themes .spinner>div {
+    background-color: var(--primary) !important;
+
+}
+
 .intanet-themes .panel {
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
+}
+
+.panel-footer {
+    background-color: var(--primary-background) !important;
 }
 
 .intanet-themes .panel.panel-default .panel-heading .panel-title {
@@ -282,8 +295,8 @@
 
 .intanet-themes .label.label-success,
 .intanet-themes .alert.alert-success {
-    background-color: var(--success) !important;
-    color: var(--primary-background) !important;
+    background-color: var(--primary-background) !important;
+    color: var(--success) !important;
     border-color: var(--border) !important;
 }
 
@@ -307,6 +320,14 @@
 
 .intanet-themes .fs-small {
     font-size: 14px !important;
+}
+
+.intanet-themes textarea {
+    background-color: var(--code-background) !important;
+    color: var(--code-foreground) !important;
+    border-color: var(--border) !important;
+    padding: 10px !important;
+
 }
 
 .intanet-themes code {
@@ -401,7 +422,8 @@
 }
 
 .intanet-themes .header .logo,
-.intanet-themes .navbar .logo {
+.intanet-themes .navbar .logo,
+.intanet-themes .video-rooms .colored-icon::before {
     /* Ensure the logo matches the theme mode */
     filter: invert(var(--logo-filter-invert)) !important;
     width: var(--logo-width) !important;
@@ -557,10 +579,6 @@
 .intanet-themes .panel .fa-location-dot {
     color: var(--info) !important;
     opacity: 0.8 !important;
-}
-
-.intanet-themes .student-home .paced .panel .panel-body {
-    margin-top: 10px !important;
 }
 
 .intanet-themes .student-home .panel {
@@ -735,7 +753,7 @@ html.intanet-themes,
 }
 
 /* Concept Page */
-.intanet-themes #curriculum_navigation_content .formatted-content {
+.intanet-themes #curriculum_navigation_content .project .formatted-content {
     margin-left: 0 !important;
 }
 
@@ -907,6 +925,13 @@ print {
     border-color: var(--border) !important;
 }
 
+.intanet-themes .project_progress_percentage~code,
+.intanet-themes #current-projects-list-blocks code {
+    background-color: var(--secondary-background) !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
 .intanet-themes #current-projects-list-blocks li a {
     color: var(--secondary-foreground) !important;
 }
@@ -920,6 +945,235 @@ print {
 }
 
 /* Single Project Page */
+.intanet-themes #curriculum_navigation_content .project ul#project-metadata {
+    font-size: 12px !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project ul#project-metadata span {
+    color: var(--muted-foreground) !important;
+    font-weight: bold !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .clean.well {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project span.label.label-primary {
+    font-size: 13px !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .clean.well ul li {
+    list-style: cjk-ideographic;
+}
+
+.intanet-themes #curriculum_navigation_content .project .clean.well ul li strong {
+    color: var(--primary) !important;
+    font-weight: normal !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .clean.well ul ul li strong {
+    color: var(--success) !important;
+    font-weight: bold !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .clean.well ul li {
+    color: var(--info) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .collapse-button.btn.close {
+    background-color: transparent !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .blog_post_div {
+    background-color: var(--secondary-background) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task-card .panel-footer .student_task_done.yes {
+    background: var(--success) !important;
+    color: var(--primary-background) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes .modal.task_get_qa_review .list-group-item {
+    margin-bottom: 5px !important;
+}
+
+.intanet-themes .modal.task_get_qa_review code {
+    background-color: var(--primary-accent) !important;
+    color: var(--secondary-foreground) !important;
+    border: none !important;
+}
+
+.intanet-themes .modal.task_get_qa_review pre {
+    background-color: var(--code-background) !important;
+    color: var(--code-foreground) !important;
+    border-color: var(--border) !important;
+    margin: 10px 0 !important;
+}
+
+.intanet-themes .modal.task_get_qa_review pre code {
+    background-color: transparent !important;
+    color: var(--code-foreground) !important;
+    border: none !important;
+}
+
+
+
+.intanet-themes #curriculum_navigation_content .project .task-card {
+    padding: 5px 0 !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task_progress_score_text {
+    color: var(--secondary-foreground) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task_progress_score_text .task_score_value {
+    color: var(--info) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar {
+    background-color: var(--secondary-background) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar {
+    background: repeating-linear-gradient(-45deg, var(--secondary-background), var(--secondary-background) 10px, var(--primary-accent) 10px, var(--primary-accent) 20px) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar .task_score_bar {
+    background-color: var(--secondary-background) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project img {
+    border-radius: 10px !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project code {
+    background-color: var(--secondary-background) !important;
+    color: var(--secondary) !important;
+    margin-right: 5px !important;
+    border-color: var(--border) !important;
+}
+
+
+.intanet-themes #curriculum_navigation_content .project pre {
+    background-color: var(--code-background) !important;
+    color: var(--code-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project pre code {
+    background-color: transparent !important;
+    color: var(--code-foreground) !important;
+    border: none !important;
+}
+
+.intanet-themes #curriculum_navigation_content .project .task-card .list-group code {
+    color: var(--primary) !important;
+}
+
+.intanet-themes .review-percentage_down span {
+    color: var(--success) !important;
+}
+
+.intanet-themes .review-github.well,
+.intanet-themes .modal.task_correction_modal .result .well {
+    color: var(--secondary-foreground) !important;
+
+}
+
+.intanet-themes .review-github.well ul li,
+.intanet-themes .modal.task_correction_modal .result .well ul li {
+    margin: 4px 0 !important;
+}
+
+.intanet-themes .review-github.well strong,
+.intanet-themes .modal.task_correction_modal .result .well b {
+    margin-right: 5px !important;
+}
+
+.intanet-themes .review-github.well .review-github-commit_id,
+.intanet-themes .modal.task_correction_modal .result .well ul li code {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.intanet-themes .review-github.well ul li span:last-child,
+.intanet-themes .review-github.well ul li .review-github-subject,
+.intanet-themes .modal.task_correction_modal .result .well ul li span,
+.intanet-themes .modal.task_correction_modal .result .well ul li em {
+    color: var(--primary) !important;
+}
+
+.intanet-themes .modal.task_correction_modal .actions .alert.alert-info {
+    color: var(--success) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline {
+    background: transparent !important;
+    padding: 8px 10px !important;
+}
+
+.intanet-themes .modal.task_correction_modal .help button {
+    background: transparent !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.requirement.success,
+.intanet-themes .task_correction_modal .check-inline.code.success {
+    border: 1px solid var(--success) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.requirement.fail,
+.intanet-themes .task_correction_modal .check-inline.code.fail {
+    border: 1px solid var(--destructive) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.efficiency.success {
+    border: 1px solid var(--success) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.efficiency.fail {
+    border: 1px solid var(--secondary) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.answer.success {
+    border: 1px solid var(--success) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline.answer.fail {
+    border: 1px solid var(--muted-foreground) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline .fa-circle-check,
+.intanet-themes .task_correction_modal .check-inline .fa-circle-info {
+    color: var(--success) !important;
+}
+
+.intanet-themes .task_correction_modal .check-inline .fa-circle-xmark,
+.intanet-themes .task_correction_modal .check-inline .fa-circle-info {
+    color: var(--destructive);
+}
+
+.intanet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-check,
+.intanet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-info {
+    color: var(--primary);
+}
+
+.intanet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-xmark,
+.intanet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-info {
+    color: var(--secondary);
+}
+
+.intanet-themes .task_correction_modal .check-inline.answer.success .fa-circle-check,
+.intanet-themes .task_correction_modal .check-inline.answer.success .fa-circle-info {
+    color: var(--info);
+}
+
+.intanet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-xmark,
+.intanet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-info {
+    color: var(--muted-foreground);
+}
 
 /* Peer Learning Day */
 .intanet-themes .panel.panel-default .panel-title .v-stack.gap-2 .hstack.gap-2 {
