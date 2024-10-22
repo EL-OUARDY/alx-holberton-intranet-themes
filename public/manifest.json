@@ -23,12 +23,24 @@
         "https://intranet.hbtn.io/*"
       ],
       "js": [
+        "content/highlight.min.js",
         "content/content.js"
       ],
       "css": [
         "content/style.css"
       ],
       "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/code.css",
+        "content/code-dark.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
   "background": {

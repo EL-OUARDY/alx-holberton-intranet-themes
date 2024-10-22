@@ -19,7 +19,7 @@ function ThemePalette({ theme }: Props) {
     <div className="grid grid-cols-8 rounded-sm">
       {palette.map((color, index) => (
         <span
-          className="h-3"
+          className="h-[.5rem]"
           key={index}
           style={{ backgroundColor: color }}
         ></span>
