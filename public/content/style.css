@@ -649,7 +649,21 @@ html.intanet-themes,
 .intanet-themes #search-button {
     color: var(--primary) !important;
     background-color: var(--secondary-background) !important;
-    border-color: var(--primary) !important;
+    border: none !important;
+    top: 16px !important;
+    right: 10px !important;
+    z-index: 9999 !important;
+    height: 40px !important;
+    width: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.intanet-themes #search-button i {
+    font-size: 24px !important;
+    position: static !important;
+    margin: 0 !important;
 }
 
 .intanet-themes #search-bar {
@@ -657,6 +671,11 @@ html.intanet-themes,
     background-color: var(--primary-button) !important;
     border-color: var(--primary-button-hover) !important;
 }
+
+.intanet-themes .modal:has(#search-bar) {
+    z-index: 99999;
+}
+
 
 /* Assistant button */
 .intanet-themes #cody-wrapper .cody-launcher {
