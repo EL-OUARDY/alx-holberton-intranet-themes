@@ -24,6 +24,8 @@
         "border": "#2f354a",
         "code-background": "#24283b",
         "code-foreground": "#9ece6a",
+        "button-foreground": "#1a1b26",
+        "button-foreground-hover": "#1a1b26",
         "primary-button": "#7aa2f7",
         "primary-button-hover": "#3d59a1",
         "success-button": "#9ece6a",

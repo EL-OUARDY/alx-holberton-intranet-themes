@@ -43,9 +43,16 @@ which will load them from the corresponding .json file.
 .intanet-themes .btn.btn-primary,
 .intanet-themes input[type="submit"] {
     background-color: var(--primary-button) !important;
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
     border-color: var(--primary-button-hover) !important;
     outline: none !important;
+}
+
+.intanet-themes button:hover,
+.intanet-themes .btn.btn-default:hover,
+.intanet-themes .btn.btn-primary:hover,
+.intanet-themes input[type="submit"]:hover {
+    color: var(--button-foreground-hover) !important;
 }
 
 .intanet-themes span.datetime {
@@ -131,7 +138,7 @@ which will load them from the corresponding .json file.
 .intanet-themes .btn.btn-default:hover,
 .intanet-themes input[type="submit"]:hover {
     background-color: var(--primary-button-hover) !important;
-    color: var(--primary-foreground) !important;
+    color: var(--button-foreground-hover) !important;
     border-color: var(--primary-button-hover);
 }
 
@@ -641,6 +648,7 @@ html.intanet-themes,
 .intanet-themes #search-button {
     color: var(--primary) !important;
     background-color: var(--secondary-background) !important;
+    border-color: var(--primary) !important;
 }
 
 .intanet-themes #search-bar {
@@ -693,7 +701,7 @@ html.intanet-themes,
 /* Sandboxes Page */
 .intanet-themes .sandboxes-filters .btn-primary {
     background: var(--primary-button) !important;
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
 }
 
 .intanet-themes .btn-webterm,
@@ -718,7 +726,7 @@ html.intanet-themes,
 .intanet-themes .panel.video-rooms-head .btn-default,
 .intanet-themes .panel.video-rooms-head .btn-default:hover {
     background-color: var(--secondary-background) !important;
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
     border-color: var(--border) !important
 }
 
@@ -1254,12 +1262,12 @@ print {
 
 .intanet-themes .dhx_cal_navline .dhx_cal_date,
 .intanet-themes .dhx_cal_tab {
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
 }
 
 .intanet-themes .dhx_cal_navline .dhx_cal_tab.active,
 .intanet-themes .dhx_cal_navline .dhx_cal_my_button.active {
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
@@ -1275,7 +1283,7 @@ print {
 
 .intanet-themes .dhx_after .dhx_month_head,
 .intanet-themes .dhx_before .dhx_month_head {
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
 }
 
 .intanet-themes .dhx_after .dhx_month_body,
@@ -1285,7 +1293,7 @@ print {
 .intanet-themes .dhx_month_head,
 .intanet-themes .dhx_month_body {
     background-color: var(--primary-background) !important;
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
 }
 
 .intanet-themes .dhx_multi_day,
@@ -1296,7 +1304,7 @@ print {
 
 
 .intanet-themes .modal#dhtmlx-filter-modal .modal-body button {
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
     background-color: var(--primary) !important;
     border-color: var(--border) !important;
     padding: 6px 20px !important;
@@ -1323,7 +1331,7 @@ print {
 }
 
 .intanet-themes .dhx_scale_hour {
-    color: var(--secondary-foreground) !important;
+    color: var(--button-foreground) !important;
     background-color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
