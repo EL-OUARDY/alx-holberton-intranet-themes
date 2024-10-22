@@ -1,5 +1,5 @@
 {
-    "id": "4",
+    "id": "5",
     "name": "Dracula Theme",
     "description": "A dark theme inspired by Dracula color palette, featuring bold, vibrant colors on a deep background for focused coding.",
     "mode": "dark",
@@ -16,7 +16,7 @@
         "secondary-foreground": "#e0e0e0",
         "muted-foreground": "#6272a4",
         "primary": "#bd93f9",
-        "primary-accent": "#8be9fd",
+        "primary-accent": "#8be9fd40",
         "secondary": "#ffb86c",
         "info": "#8be9fd",
         "success": "#50fa7b",

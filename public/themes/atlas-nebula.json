@@ -1,10 +1,10 @@
 {
     "id": "3",
     "name": "Atlas Nebula",
-    "description": "Atlas Nebula is a dark theme I created for my setup. I use it in ZSH, terminal, VIM, and VSCode for a sleek and consistent experience.",
+    "description": "Atlas Nebula is a dark theme I use across ZSH, terminal, VIM, and VSCode for a sleek, unified look.",
     "mode": "dark",
     "author": {
-        "name": "EL_OUARDY",
+        "name": "el_ouardy",
         "twitter": "https://x.com/_ELOUARDY",
         "github": "https://github.com/EL-OUARDY"
     },
@@ -16,7 +16,7 @@
         "secondary-foreground": "#bfc7cf",
         "muted-foreground": "#8f7951",
         "primary": "#7e57c2cc",
-        "primary-accent": "#6c4da55c",
+        "primary-accent": "#b395ec7d",
         "secondary": "#ffcb64",
         "info": "#82AAFF",
         "success": "#a6e88d",
@@ -24,8 +24,8 @@
         "border": "#2C2F40",
         "code-background": "#292d3e",
         "code-foreground": "#a6e88d",
-        "button-foreground": "#bfc7cf",
-        "button-foreground-hover": "#fff",
+        "button-foreground": "#292d3e",
+        "button-foreground-hover": "#212432",
         "primary-button": "#7e57c2cc",
         "primary-button-hover": "#7e57c2",
         "success-button": "#a6e88d",

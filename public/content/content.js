@@ -28,7 +28,6 @@ function applyTheme(state) {
     const colors = state.activeTheme.colors;
     for (const key in colors) {
         if (Object.prototype.hasOwnProperty.call(colors, key)) {
-            console.log(`Key: ${key}, Value: ${colors[key]}`);
             root.style.setProperty(`--${key}`, colors[key]);
         }
     }
@@ -36,7 +35,6 @@ function applyTheme(state) {
     const settings = state.activeTheme.settings;
     for (const key in settings) {
         if (Object.prototype.hasOwnProperty.call(settings, key)) {
-            console.log(`Key: ${key}, Value: ${settings[key]}`);
             root.style.setProperty(`--${key}`, settings[key]);
         }
     }

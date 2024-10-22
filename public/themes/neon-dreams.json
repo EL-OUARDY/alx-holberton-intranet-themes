@@ -4,7 +4,7 @@
     "description": "Immerse yourself in a world of glowing code with this vibrant theme.",
     "mode": "dark",
     "author": {
-        "name": "Gemini",
+        "name": "ClaudeAI",
         "twitter": null,
         "github": null
     },
@@ -16,7 +16,7 @@
         "secondary-foreground": "#a0a0a0",
         "muted-foreground": "#707070",
         "primary": "#00ffff",
-        "primary-accent": "#007fff",
+        "primary-accent": "#007fff36",
         "secondary": "#ff8000",
         "info": "#00bfff",
         "success": "#4cff00",

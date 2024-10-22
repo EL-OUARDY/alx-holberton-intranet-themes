@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { getAvailableThemes } from "@/lib/utils";
 import { IThemesList } from "@/models/Theme";
 import { useContentTheme } from "@/contexts/ContentThemeProvider";
+import ThemePalette from "./ThemePalette";
 
 function ThemeSwitcher() {
   const { activeTheme, changeTheme } = useContentTheme();
@@ -63,9 +64,10 @@ function ThemeSwitcher() {
               <span className="flex-1 underline">Created By:</span>
               <a
                 href={activeTheme?.author.github}
-                className="ml-1 font-normal lowercase hover:font-bold"
+                target="_blank"
+                className="ml-1 font-normal hover:font-bold"
               >
-                @{activeTheme?.author.name}
+                @{activeTheme?.author.name.replace(/ /g, "_")}
               </a>
             </div>
             <Separator />
@@ -76,19 +78,10 @@ function ThemeSwitcher() {
                   {activeTheme?.description}
                 </div>
               </div>
-              <div className="text-xs">
-                <div className="mb-1 underline">Palette:</div>
+              <div>
+                <div className="mb-1 text-xs underline">Theme Palette:</div>
 
-                <div className="grid grid-cols-8 rounded-sm">
-                  <span className="h-2 bg-red-400"></span>
-                  <span className="h-2 bg-blue-400"></span>
-                  <span className="h-2 bg-purple-400"></span>
-                  <span className="h-2 bg-slate-600"></span>
-                  <span className="h-2 bg-yellow-400"></span>
-                  <span className="h-2 bg-teal-400"></span>
-                  <span className="h-2 bg-pink-500"></span>
-                  <span className="h-2 bg-green-400"></span>
-                </div>
+                <ThemePalette theme={activeTheme} />
               </div>
             </div>
           </>

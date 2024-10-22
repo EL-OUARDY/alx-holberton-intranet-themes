@@ -4,7 +4,7 @@
     "description": "Inspired by the default light color theme of Microsoft's Visual Studio Code editor.",
     "mode": "light",
     "author": {
-        "name": "EL_OUARDY",
+        "name": "el_ouardy",
         "twitter": "https://x.com/_ELOUARDY",
         "github": "https://github.com/EL-OUARDY"
     },
@@ -16,7 +16,7 @@
         "secondary-foreground": "#34495e",
         "muted-foreground": "#7f8c8d",
         "primary": "#3498db",
-        "primary-accent": "#2980b9",
+        "primary-accent": "#aecfe4",
         "secondary": "#e67e22",
         "info": "#2980b9",
         "success": "#27ae60",

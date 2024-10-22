@@ -1,12 +1,12 @@
 {
-    "id": "111",
+    "id": "6",
     "name": "Twilight Forest",
     "description": "A serene, nature-inspired dark theme evoking a forest at dusk",
     "mode": "dark",
     "author": {
-        "name": "Claude",
-        "twitter": "https://x.com/anthropicAI",
-        "github": "https://github.com/anthropicAI"
+        "name": "ChatGPT",
+        "twitter": null,
+        "github": null
     },
     "colors": {
         "primary-background": "#1a2327",
@@ -16,7 +16,7 @@
         "secondary-foreground": "#b8c5c9",
         "muted-foreground": "#7a8d94",
         "primary": "#66b3a6",
-        "primary-accent": "#4d8c7f",
+        "primary-accent": "#4d8c7f61",
         "secondary": "#a67db8",
         "info": "#5eb8ff",
         "success": "#7fc06e",

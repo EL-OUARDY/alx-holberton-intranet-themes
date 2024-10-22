@@ -30,7 +30,6 @@ function applyTheme(state: IState) {
   const colors: { [key: string]: string } = state.activeTheme.colors;
   for (const key in colors) {
     if (Object.prototype.hasOwnProperty.call(colors, key)) {
-      console.log(`Key: ${key}, Value: ${colors[key]}`);
       root.style.setProperty(`--${key}`, colors[key]);
     }
   }
@@ -38,7 +37,6 @@ function applyTheme(state: IState) {
   const settings: { [key: string]: string } = state.activeTheme.settings;
   for (const key in settings) {
     if (Object.prototype.hasOwnProperty.call(settings, key)) {
-      console.log(`Key: ${key}, Value: ${settings[key]}`);
       root.style.setProperty(`--${key}`, settings[key]);
     }
   }

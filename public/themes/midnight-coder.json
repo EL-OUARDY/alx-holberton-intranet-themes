@@ -1,12 +1,12 @@
 {
-    "id": "7",
+    "id": "4",
     "name": "Midnight Coder",
     "description": "A dark, soothing theme for late-night coding sessions.",
     "mode": "dark",
     "author": {
-        "name": "ClaudeAI",
-        "twitter": "https://x.com/anthropicAI",
-        "github": "https://github.com/anthropicAI"
+        "name": "Gemini",
+        "twitter": null,
+        "github": null
     },
     "colors": {
         "primary-background": "#1a1b26",
@@ -25,7 +25,7 @@
         "code-background": "#24283b",
         "code-foreground": "#9ece6a",
         "button-foreground": "#1a1b26",
-        "button-foreground-hover": "#1a1b26",
+        "button-foreground-hover": "#c0caf5",
         "primary-button": "#7aa2f7",
         "primary-button-hover": "#3d59a1",
         "success-button": "#9ece6a",

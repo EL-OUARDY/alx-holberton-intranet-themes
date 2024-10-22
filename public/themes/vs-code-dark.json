@@ -4,7 +4,7 @@
     "description": "Inspired by the default dark color theme of Microsoft's Visual Studio Code editor.",
     "mode": "dark",
     "author": {
-        "name": "EL_OUARDY",
+        "name": "el_ouardy",
         "twitter": "https://x.com/_ELOUARDY",
         "github": "https://github.com/EL-OUARDY"
     },
@@ -16,7 +16,7 @@
         "secondary-foreground": "#bbbbbb",
         "muted-foreground": "#858585",
         "primary": "#007acc",
-        "primary-accent": "#0098ff",
+        "primary-accent": "#007acc33",
         "secondary": "#c586c0",
         "info": "#75beff",
         "success": "#89d185",

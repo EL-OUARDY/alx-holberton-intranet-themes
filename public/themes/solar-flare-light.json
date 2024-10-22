@@ -1,12 +1,12 @@
 {
-    "id": "1223",
+    "id": "7",
     "name": "Solar Flare Light",
     "description": "A light theme inspired by the famous Solarized Light color scheme",
     "mode": "light",
     "author": {
         "name": "ClaudeAI",
-        "twitter": "https://x.com/anthropicAI",
-        "github": "https://github.com/anthropicAI"
+        "twitter": null,
+        "github": null
     },
     "colors": {
         "primary-background": "#fdf6e3",
@@ -16,7 +16,7 @@
         "secondary-foreground": "#657b83",
         "muted-foreground": "#93a1a1",
         "primary": "#268bd2",
-        "primary-accent": "#2aa198",
+        "primary-accent": "#2aa19838",
         "secondary": "#cb4b16",
         "info": "#2aa198",
         "success": "#859900",
