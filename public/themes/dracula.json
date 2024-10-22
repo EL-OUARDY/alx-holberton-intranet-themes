@@ -9,6 +9,34 @@
         "github": "https://github.com/dracula/dracula-theme"
     },
     "colors": {
-        "background": "purple"
+        "primary-background": "#282a36",
+        "secondary-background": "#44475a",
+        "muted-background": "#3b3e4f",
+        "primary-foreground": "#f8f8f2",
+        "secondary-foreground": "#e0e0e0",
+        "muted-foreground": "#6272a4",
+        "primary": "#bd93f9",
+        "primary-accent": "#8be9fd",
+        "secondary": "#ffb86c",
+        "info": "#8be9fd",
+        "success": "#50fa7b",
+        "destructive": "#ff5555",
+        "border": "#44475a",
+        "code-background": "#282a36",
+        "code-foreground": "#f1fa8c",
+        "primary-button": "#bd93f9",
+        "primary-button-hover": "#9371c7",
+        "success-button": "#50fa7b",
+        "success-button-hover": "#40c862",
+        "secondary-button": "#ffb86c",
+        "secondary-button-hover": "#cc9256",
+        "destructive-button": "#ff5555",
+        "destructive-button-hover": "#cc4444",
+        "user-text-select-color": "#282a36",
+        "user-text-select-background": "#bd93f9"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
     }
 }

@@ -1,0 +1,42 @@
+{
+    "id": "10",
+    "name": "Sunlit Code",
+    "description": "A bright, cheerful theme for productive daytime coding",
+    "mode": "light",
+    "author": {
+        "name": "ClaudeAI",
+        "twitter": "https://x.com/anthropicAI",
+        "github": "https://github.com/anthropicAI"
+    },
+    "colors": {
+        "primary-background": "#ffffff",
+        "secondary-background": "#f0f4f8",
+        "muted-background": "#e1e8ed",
+        "primary-foreground": "#2c3e50",
+        "secondary-foreground": "#34495e",
+        "muted-foreground": "#7f8c8d",
+        "primary": "#3498db",
+        "primary-accent": "#2980b9",
+        "secondary": "#e67e22",
+        "info": "#2980b9",
+        "success": "#27ae60",
+        "destructive": "#e74c3c",
+        "border": "#bdc3c7",
+        "code-background": "#f9f9f9",
+        "code-foreground": "#16a085",
+        "primary-button": "#3498db",
+        "primary-button-hover": "#2980b9",
+        "success-button": "#27ae60",
+        "success-button-hover": "#219a52",
+        "secondary-button": "#e67e22",
+        "secondary-button-hover": "#d35400",
+        "destructive-button": "#e74c3c",
+        "destructive-button-hover": "#c0392b",
+        "user-text-select-color": "#ffffff",
+        "user-text-select-background": "#3498db"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
+    }
+}

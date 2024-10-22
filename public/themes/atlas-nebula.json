@@ -1,12 +1,12 @@
 {
-    "id": "99",
-    "name": "Your Theme's Name",
-    "description": "A short description of your themes.",
-    "mode": "light | dark",
+    "id": "3",
+    "name": "Atlas Nebula",
+    "description": "Atlas Nebula is a dark theme I created for my setup. I use it in ZSH, terminal, VIM, and VSCode for a sleek and consistent experience.",
+    "mode": "dark",
     "author": {
-        "name": "Julien Barbier",
-        "twitter": "https://x.com/julienbarbier42",
-        "github": "https://github.com/jbarbier"
+        "name": "EL_OUARDY",
+        "twitter": "https://x.com/_ELOUARDY",
+        "github": "https://github.com/EL-OUARDY"
     },
     "colors": {
         "primary-background": "#212432",

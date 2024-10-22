@@ -9,6 +9,34 @@
         "github": "https://github.com/EL-OUARDY"
     },
     "colors": {
-        "background": "cyan"
+        "primary-background": "#ffffff",
+        "secondary-background": "#f5f5f5",
+        "muted-background": "#e8e8e8",
+        "primary-foreground": "#333333",
+        "secondary-foreground": "#666666",
+        "muted-foreground": "#999999",
+        "primary": "#007acc",
+        "primary-accent": "#005cc7",
+        "secondary": "#f78c6c",
+        "info": "#89ddff",
+        "success": "#98c379",
+        "destructive": "#ff5555",
+        "border": "#dcdcdc",
+        "code-background": "#f5f5f5",
+        "code-foreground": "#333333",
+        "primary-button": "#007acc",
+        "primary-button-hover": "#005cc7",
+        "success-button": "#98c379",
+        "success-button-hover": "#89ddff",
+        "secondary-button": "#f78c6c",
+        "secondary-button-hover": "#ffb86c",
+        "destructive-button": "#ff5555",
+        "destructive-button-hover": "#ff3333",
+        "user-text-select-color": "#333333",
+        "user-text-select-background": "#007acc"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
     }
 }

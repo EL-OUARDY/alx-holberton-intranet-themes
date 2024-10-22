@@ -1,0 +1,42 @@
+{
+    "id": "111",
+    "name": "Twilight Forest",
+    "description": "A serene, nature-inspired dark theme evoking a forest at dusk",
+    "mode": "dark",
+    "author": {
+        "name": "Claude",
+        "twitter": "https://x.com/anthropicAI",
+        "github": "https://github.com/anthropicAI"
+    },
+    "colors": {
+        "primary-background": "#1a2327",
+        "secondary-background": "#233136",
+        "muted-background": "#2c3c42",
+        "primary-foreground": "#e0e7e9",
+        "secondary-foreground": "#b8c5c9",
+        "muted-foreground": "#7a8d94",
+        "primary": "#66b3a6",
+        "primary-accent": "#4d8c7f",
+        "secondary": "#a67db8",
+        "info": "#5eb8ff",
+        "success": "#7fc06e",
+        "destructive": "#e86d5c",
+        "border": "#3d4b50",
+        "code-background": "#1e292e",
+        "code-foreground": "#c5d1c2",
+        "primary-button": "#66b3a6",
+        "primary-button-hover": "#4d8c7f",
+        "success-button": "#7fc06e",
+        "success-button-hover": "#669a58",
+        "secondary-button": "#a67db8",
+        "secondary-button-hover": "#8a639b",
+        "destructive-button": "#e86d5c",
+        "destructive-button-hover": "#c55a4a",
+        "user-text-select-color": "#e0e7e9",
+        "user-text-select-background": "#4d8c7f"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
+    }
+}

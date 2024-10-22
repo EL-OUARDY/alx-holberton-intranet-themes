@@ -1,0 +1,42 @@
+{
+    "id": "8",
+    "name": "Neon Dreams",
+    "description": "Immerse yourself in a world of glowing code with this vibrant theme.",
+    "mode": "dark",
+    "author": {
+        "name": "Gemini",
+        "twitter": null,
+        "github": null
+    },
+    "colors": {
+        "primary-background": "#121212",
+        "secondary-background": "#212121",
+        "muted-background": "#292929",
+        "primary-foreground": "#fff",
+        "secondary-foreground": "#a0a0a0",
+        "muted-foreground": "#707070",
+        "primary": "#00ffff",
+        "primary-accent": "#007fff",
+        "secondary": "#ff8000",
+        "info": "#00bfff",
+        "success": "#4cff00",
+        "destructive": "#ff0000",
+        "border": "#333333",
+        "code-background": "#212121",
+        "code-foreground": "#a0a0a0",
+        "primary-button": "#00ffff",
+        "primary-button-hover": "#007fff",
+        "success-button": "#4cff00",
+        "success-button-hover": "#32ff00",
+        "secondary-button": "#ff8000",
+        "secondary-button-hover": "#e65c00",
+        "destructive-button": "#ff0000",
+        "destructive-button-hover": "#cc0000",
+        "user-text-select-color": "#212121",
+        "user-text-select-background": "#00ffff"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
+    }
+}

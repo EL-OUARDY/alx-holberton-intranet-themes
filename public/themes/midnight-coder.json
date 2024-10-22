@@ -1,0 +1,42 @@
+{
+    "id": "7",
+    "name": "Midnight Coder",
+    "description": "A dark, soothing theme for late-night coding sessions.",
+    "mode": "dark",
+    "author": {
+        "name": "ClaudeAI",
+        "twitter": "https://x.com/anthropicAI",
+        "github": "https://github.com/anthropicAI"
+    },
+    "colors": {
+        "primary-background": "#1a1b26",
+        "secondary-background": "#24283b",
+        "muted-background": "#1f2335",
+        "primary-foreground": "#c0caf5",
+        "secondary-foreground": "#9aa5ce",
+        "muted-foreground": "#565f89",
+        "primary": "#7aa2f7",
+        "primary-accent": "#3d59a1",
+        "secondary": "#bb9af7",
+        "info": "#7dcfff",
+        "success": "#9ece6a",
+        "destructive": "#f7768e",
+        "border": "#2f354a",
+        "code-background": "#24283b",
+        "code-foreground": "#9ece6a",
+        "primary-button": "#7aa2f7",
+        "primary-button-hover": "#3d59a1",
+        "success-button": "#9ece6a",
+        "success-button-hover": "#73a549",
+        "secondary-button": "#bb9af7",
+        "secondary-button-hover": "#9d7cd8",
+        "destructive-button": "#f7768e",
+        "destructive-button-hover": "#db4b6b",
+        "user-text-select-color": "#c0caf5",
+        "user-text-select-background": "#3d59a1"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
+    }
+}

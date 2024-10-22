@@ -1,0 +1,42 @@
+{
+    "id": "1223",
+    "name": "Solar Flare Light",
+    "description": "A light theme inspired by the famous Solarized Light color scheme",
+    "mode": "light",
+    "author": {
+        "name": "ClaudeAI",
+        "twitter": "https://x.com/anthropicAI",
+        "github": "https://github.com/anthropicAI"
+    },
+    "colors": {
+        "primary-background": "#fdf6e3",
+        "secondary-background": "#eee8d5",
+        "muted-background": "#e0dbc6",
+        "primary-foreground": "#586e75",
+        "secondary-foreground": "#657b83",
+        "muted-foreground": "#93a1a1",
+        "primary": "#268bd2",
+        "primary-accent": "#2aa198",
+        "secondary": "#cb4b16",
+        "info": "#2aa198",
+        "success": "#859900",
+        "destructive": "#dc322f",
+        "border": "#c1c0b1",
+        "code-background": "#eee8d5",
+        "code-foreground": "#586e75",
+        "primary-button": "#268bd2",
+        "primary-button-hover": "#1e6ea7",
+        "success-button": "#859900",
+        "success-button-hover": "#6a7a00",
+        "secondary-button": "#cb4b16",
+        "secondary-button-hover": "#a23c11",
+        "destructive-button": "#dc322f",
+        "destructive-button-hover": "#b12825",
+        "user-text-select-color": "#fdf6e3",
+        "user-text-select-background": "#268bd2"
+    },
+    "settings": {
+        "logo-width": "60px",
+        "logo-height": "60px"
+    }
+}
