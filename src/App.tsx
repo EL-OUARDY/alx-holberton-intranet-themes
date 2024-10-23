@@ -8,6 +8,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 import Contribute from "./components/Contribute";
 import { ContentThemeProvider } from "./contexts/ContentThemeProvider";
 import { PopupThemeProvider } from "./contexts/PopupThemeProvider";
+import Customize from "./components/Customize";
 
 function App() {
   return (
@@ -37,9 +38,7 @@ function App() {
                 <ThemeSwitcher />
               </TabsContent>
               <TabsContent value="customize" className="flex-1">
-                <div className="flex h-full items-center justify-center rounded-lg border">
-                  <img className="size-28" src="./logo.svg" alt="logo" />
-                </div>
+                <Customize />
               </TabsContent>
               <TabsContent value="contribute" className="flex-1">
                 <Contribute />

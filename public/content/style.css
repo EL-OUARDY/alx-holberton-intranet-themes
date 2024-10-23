@@ -1394,3 +1394,74 @@ print {
     color: var(--secondary-foreground) !important;
     background-color: var(--secondary-background) !important;
 }
+
+/* Focus Mode */
+html.intanet-themes.focus-mode:has(.project) .header,
+html.intanet-themes.focus-mode:has(.project) .sidebar,
+html.intanet-themes.focus-mode:has(.project) #layout-bars,
+html.intanet-themes.focus-mode:has(.project) #search-button,
+html.intanet-themes.focus-mode:has(.project) #cody-wrapper {
+    display: none !important;
+}
+
+html.intanet-themes.focus-mode:has(.project) .content {
+    margin: 0 !important;
+}
+
+html.intanet-themes.focus-mode:has(.project) .content .project>div {
+    margin: 0 auto !important;
+    width: 70% !important;
+    float: none !important;
+}
+
+#back-btn-focus-mode,
+#toggle-focus-mode-btn {
+    display: none;
+}
+
+html.intanet-themes #back-btn-focus-mode {
+    display: none !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    background: transparent !important;
+    color: var(--primary) !important;
+    border: none !important;
+    font-size: 25px !important;
+    opacity: 0.5 !important;
+}
+
+html.intanet-themes .project>div>h1 {
+    display: flex !important;
+    align-items: center !important;
+    margin: 16px 0 !important;
+}
+
+html.intanet-themes #toggle-focus-mode-btn {
+    display: inline !important;
+    background: transparent !important;
+    color: var(--primary) !important;
+    border: none !important;
+    font-size: 25px !important;
+    opacity: 0.5 !important;
+    padding: 0 !important;
+    margin-left: 10px !important;
+}
+
+html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode {
+    display: block !important;
+}
+
+html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode:hover,
+html.intanet-themes.focus-mode:has(.project) .project #toggle-focus-mode-btn:hover {
+    opacity: 1 !important;
+}
+
+
+html.intanet-themes #toggle-focus-mode-btn i::before {
+    content: "\f31e" !important;
+}
+
+html.intanet-themes.focus-mode #toggle-focus-mode-btn i::before {
+    content: "\f78c" !important;
+}

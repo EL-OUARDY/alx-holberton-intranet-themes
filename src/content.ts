@@ -65,6 +65,73 @@ function applyTheme(state: IState) {
       : chrome.runtime.getURL("/content/code.css");
   document.head.appendChild(link);
   if (state.isEnabled) {
+    hljs.configure({ ignoreUnescapedHTML: true });
     hljs.highlightAll();
+  }
+
+  // Focus Mode
+  if (state.isFocusModeEnabled) {
+    document.documentElement.classList.add("focus-mode");
+  } else document.documentElement.classList.remove("focus-mode");
+}
+
+// Document is ready
+document.addEventListener("DOMContentLoaded", function () {
+  // create back button when focus mode is on
+  createFocusModeControls();
+});
+
+function createFocusModeControls() {
+  // Create Back Button
+  const projectElement = document.querySelector("html.intanet-themes .project");
+
+  if (projectElement) {
+    // Create the button element
+    const button = document.createElement("button");
+    button.className = "btn btn-primary";
+    button.id = "back-btn-focus-mode";
+    button.title = "Go Back";
+
+    // Create the icon element
+    const icon = document.createElement("i");
+    icon.className = "fa-solid fa-arrow-left";
+
+    // Append the icon to the button
+    button.appendChild(icon);
+
+    // Add the onClick event to go to the previous page
+    button.addEventListener("click", function () {
+      window.history.back(); // Go back to the previous page
+    });
+
+    // Append the button to the target element
+    projectElement.appendChild(button);
+  }
+
+  // Create Focus Mode Button
+  const projectTitleElement = document.querySelector(
+    "html.intanet-themes .project>div>h1",
+  );
+  if (projectTitleElement) {
+    // Create the button element
+    const button = document.createElement("span");
+    button.className = "btn btn-primary";
+    button.id = "toggle-focus-mode-btn";
+    button.title = "Toggle Focus Mode";
+
+    // Create the icon element
+    const icon = document.createElement("i");
+    icon.className = "fa-solid";
+
+    // Append the icon to the button
+    button.appendChild(icon);
+
+    // Add the onClick event to toggle focus mode class
+    button.addEventListener("click", function () {
+      root.classList.toggle("focus-mode");
+    });
+
+    // Append the button to the target element
+    projectTitleElement.appendChild(button);
   }
 }
