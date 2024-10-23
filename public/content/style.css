@@ -667,9 +667,13 @@ html.intanet-themes,
 }
 
 .intanet-themes #search-bar {
-    color: var(--secondary-foreground) !important;
+    color: var(--primary-foreground) !important;
     background-color: var(--primary-button) !important;
     border-color: var(--primary-button-hover) !important;
+}
+
+.intanet-themes #search-bar::placeholder {
+    color: var(--secondary-foreground) !important;
 }
 
 .intanet-themes .modal:has(#search-bar) {
