@@ -39,7 +39,7 @@ function Customize() {
             <div className="flex-1">
               <RotateCcwIcon
                 onClick={() => changeFontSize(14)}
-                className="ml-auto size-3 text-muted-foreground hover:text-foreground"
+                className="ml-auto size-3 cursor-pointer text-muted-foreground hover:text-foreground"
               />
             </div>
             <span className="rounded-md border border-transparent py-0.5 pl-2 text-right text-sm text-muted-foreground">
@@ -64,7 +64,7 @@ function Customize() {
             <div className="flex-1">
               <RotateCcwIcon
                 onClick={() => changeCodeFontSize(14)}
-                className="ml-auto size-3 text-muted-foreground hover:text-foreground"
+                className="ml-auto size-3 cursor-pointer text-muted-foreground hover:text-foreground"
               />
             </div>
             <span className="rounded-md border border-transparent py-0.5 pl-2 text-right text-sm text-muted-foreground">

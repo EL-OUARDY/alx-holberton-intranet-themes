@@ -1,4 +1,4 @@
 declare const hljs: {
-  configure: ({ ignoreUnescapedHTML: boolean }) => void;
+  configure: ({ classPrefix: string, ignoreUnescapedHTML: boolean }) => void;
   highlightAll: () => void;
 };

@@ -167,7 +167,7 @@ which will load them from the corresponding theme.json file.
     color: var(--secondary-foreground) !important;
 }
 
-.panel-footer {
+.intanet-themes .panel-footer {
     background-color: var(--primary-background) !important;
 }
 
@@ -1459,7 +1459,7 @@ html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode {
 }
 
 html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode:hover,
-html.intanet-themes.focus-mode:has(.project) .project #toggle-focus-mode-btn:hover {
+html.intanet-themes #toggle-focus-mode-btn:hover {
     opacity: 1 !important;
 }
 

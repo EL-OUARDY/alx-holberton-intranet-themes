@@ -2,6 +2,7 @@
 // Do NOT modify the generated content.js file directly!
 // Any changes should be made in the TypeScript source file (@src/content.ts)
 const root = document.documentElement;
+let focusMode = false;
 // load active theme from chrome storage
 chrome.storage.local.get(["state"], function (result) {
     const state = result.state;
@@ -37,49 +38,56 @@ function applyTheme(state) {
             root.style.setProperty(`--${key}`, settings[key]);
         }
     }
-    // handle font-size
-    root.style.setProperty(`--font-size`, state.fontSize + "px");
-    root.style.setProperty(`--code-font-size`, state.codeFontSize + "px");
     // handle dark/light themes
     if (state.activeTheme.mode == "dark") {
-        document.documentElement.classList.remove("light");
         document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
     }
     else {
-        document.documentElement.classList.remove("dark");
         document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
     }
     const filterInvert = state.activeTheme.mode == "dark" ? "1" : "0";
     root.style.setProperty("--logo-filter-invert", filterInvert);
     // Apply code highlighting
-    // First, check if there's an existing code theme and remove it
+    const cssFile = state.activeTheme.mode == "dark"
+        ? chrome.runtime.getURL("/content/code-dark.css")
+        : chrome.runtime.getURL("/content/code.css");
     const existingLink = document.getElementById("intranet-code-theme");
     if (existingLink) {
-        existingLink.remove();
+        if (existingLink.href != cssFile) {
+            existingLink.href = cssFile;
+        }
     }
-    const link = document.createElement("link");
-    link.id = "intranet-code-theme";
-    link.rel = "stylesheet";
-    link.href =
-        state.activeTheme.mode == "dark"
-            ? chrome.runtime.getURL("/content/code-dark.css")
-            : chrome.runtime.getURL("/content/code.css");
-    document.head.appendChild(link);
-    if (state.isEnabled) {
-        hljs.configure({ ignoreUnescapedHTML: true });
-        hljs.highlightAll();
+    else {
+        const link = document.createElement("link");
+        link.id = "intranet-code-theme";
+        link.rel = "stylesheet";
+        link.href = cssFile;
+        document.head.appendChild(link);
     }
     // Focus Mode
-    if (state.isFocusModeEnabled) {
+    if (state.isFocusModeEnabled || focusMode) {
         document.documentElement.classList.add("focus-mode");
     }
     else
         document.documentElement.classList.remove("focus-mode");
+    // Handle font-size
+    root.style.setProperty(`--font-size`, state.fontSize + "px");
+    root.style.setProperty(`--code-font-size`, state.codeFontSize + "px");
 }
 // Document is ready
 document.addEventListener("DOMContentLoaded", function () {
     // create back button when focus mode is on
     createFocusModeControls();
+    // highlight code syntax
+    if (root.classList.contains("intanet-themes")) {
+        hljs.configure({
+            classPrefix: "code-highlight-",
+            ignoreUnescapedHTML: true,
+        });
+        hljs.highlightAll();
+    }
 });
 function createFocusModeControls() {
     // Create Back Button
@@ -118,6 +126,7 @@ function createFocusModeControls() {
         // Add the onClick event to toggle focus mode class
         button.addEventListener("click", function () {
             root.classList.toggle("focus-mode");
+            focusMode = !focusMode;
         });
         // Append the button to the target element
         projectTitleElement.appendChild(button);
