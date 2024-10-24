@@ -37,6 +37,9 @@ function applyTheme(state) {
             root.style.setProperty(`--${key}`, settings[key]);
         }
     }
+    // handle font-size
+    root.style.setProperty(`--font-size`, state.fontSize + "px");
+    root.style.setProperty(`--code-font-size`, state.codeFontSize + "px");
     // handle dark/light themes
     if (state.activeTheme.mode == "dark") {
         document.documentElement.classList.remove("light");

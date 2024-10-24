@@ -4,6 +4,8 @@ declare global {
   interface IState {
     isEnabled: boolean;
     isFocusModeEnabled: boolean;
+    fontSize: number;
+    codeFontSize: number;
     activeTheme: ITheme;
   }
 }

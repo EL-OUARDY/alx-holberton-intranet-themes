@@ -7,6 +7,11 @@ which will load them from the corresponding theme.json file.
 .intanet-themes body {
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
+    font-size: var(--font-size) !important;
+}
+
+.intanet-themes .project pre code {
+    font-size: var(--code-font-size) !important;
 }
 
 .intanet-themes ::selection {
@@ -431,6 +436,7 @@ which will load them from the corresponding theme.json file.
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
     border-color: var(--border) !important;
+    font-size: 14px !important;
 
 }
 
