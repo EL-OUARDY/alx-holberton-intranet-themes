@@ -13,8 +13,9 @@ to Enhance Students Intranet Experience
 
 - [Overview](#overview)
 - [Features](#features)
-- [Technologies used](#technologies-used)
+- [Technologies](#technologies)
 - [Installation](#installation)
+- [Development](#development)
 - [Contribution](#contribution)
 - [Contact](#contact-me)
 
@@ -27,10 +28,9 @@ The journey of studying at ALX has been truly amazing, and now we’re at the fi
 ✅ **Stunning Themes** _(8 well-crafted themes and yours could be next!)_ \
 ✅ **In-Task Code Highlighting**\
 ✅ **Modern UI**\
-✅ **Focus Mode**\
-✅ **Progress Tracker**
+✅ **Focus Mode**
 
-## Technologies used
+## Technologies
 
 - `React.js` with `TypeScript`
 - `Tailwind CSS`
@@ -41,70 +41,90 @@ The journey of studying at ALX has been truly amazing, and now we’re at the fi
 
 ## Installation
 
-### Method 1: `Chrome Web Store`
+### Method 1: `Manually`
+
+1. **Download the ZIP File:** Get the latest version of the extension from the [Releases](https://github.com/EL-OUARDY/alx-holberton-intranet-themes/releases) page.
+2. **Extract the Files:** Unzip the downloaded file to a folder on your computer.
+3. **Load the Extension in Chrome:**
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable **Developer mode** by toggling the switch in the top right corner.
+   - Click on **Load unpacked** and select the folder where you extracted the files.
+4. **Enjoy the Extension**: It should now be installed and ready to use!
+
+### Method 2: `Chrome Web Store`
 
 The extension will be available on the Chrome Web Store soon! Stay tuned for updates.
 
-### Method 2: `Manually`
+## Development
 
-To install the **ALX Intranet Themes & Tools** Chrome extension manually, follow these steps:
+This guide is designed for developers who are new to Chrome extension development. We'll walk through each step to help you get started!
 
-**Clone the Repository**:
+### Setting Up Development Environment
 
-Open your terminal and run the following command to clone the repository:
+1. **Clone Your Forked Repository**
+
+   ```bash
+   git clone https://github.com/your-username/alx-holberton-intranet-themes
+   ```
+
+2. **Install Node Dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start Development Mode**
+
+   ```bash
+   npm run dev
+   ```
+
+   This command will:
+
+   - Build the extension code
+   - Watch for changes and rebuild automatically
+   - Output the built files to the `/dist` directory
+
+4. **Load the Extension in Chrome**:
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable **Developer mode** in the top right corner
+   - Click **Load unpacked**
+   - Select the `/dist` directory from your project folder
+
+### Important Development Notes
+
+The project uses `React.js` for the popup UI, with the core extension functionality implemented in TypeScript.
+
+#### Hot Reload Behavior:
+
+- Changes to popup UI code (React components) will update automatically
+
+- Changes to `content.ts`, `background.ts`, or files in `/public` _(including themes)_ require manually **reloading** the extension from chrome settings.
+
+#### Key Files:
+
+- `content.ts`: Handles DOM modifications and theme application
+
+- `background.ts`: Manages extension lifecycle and events
+
+- `Files in /public`: Contains extension manifest and static assets
+
+### Project Structure
+
+Here's an overview of key files and directories:
 
 ```bash
-git clone https://github.com/EL-OUARDY/alx-holberton-intranet-themes
+├── src/
+│   ├── content.ts     # Content script for page modifications
+│   └── background.ts  # Background script for extension events
+│
+├── public/           # Static assets and extension files
+└── dist/            # Built extension files (generated)
 ```
-
-Navigate to the source code directory:
-
-```bash
-cd alx-holberton-intranet-themes
-```
-
-Install the necessary Node packages:
-
-```bash
-npm install
-```
-
-Build the project:
-
-```bash
-npm run build
-```
-
-The production code for the extension can be found in the `/dist` directory. (you are free to move it anywhere in your disk before loading it to chrome)
-
-**Open Chrome Extensions**:
-
-- In Chrome, navigate to `chrome://extensions/`
-
-**Enable Developer Mode**:
-
-- Toggle the "Developer mode" switch in the top right corner.
-
-**Load Unpacked Extension**:
-
-- Click on the "Load unpacked" button.
-- Choose the `/dist` directory located in the folder where you cloned the repository.
-
-**Enjoy the Extension**:
-
-- The extension should now be installed and ready to use!
 
 ## Contribution
 
-If you’d like to add your own theme, simply create a **JSON** file that contains details about your theme, such as colors and other relevant information (see this [\_example.json](./public/themes/_example.json)). The extension is configured to automatically load themes from this directory, so you don’t have to worry about any additional setup.
+If you’d like to add your own theme, simply create a `JSON` file that contains details about your theme, such as colors and other relevant information (see this [\_example.json](./public/themes/_example.json)). The extension is configured to automatically load themes from this directory, so you don’t have to worry about any additional setup.
 
 ### Adding Features
-
-## Contributing
-
-If you’d like to add your own theme, simply create a JSON file that contains details about your theme, such as colors and other relevant information (refer to `example.json` for guidance). The extension is configured to automatically load themes from this directory, so you don’t have to worry about any additional setup.
-
-## Adding Features
 
 To add features to the extension please follow these steps:
 
@@ -116,7 +136,7 @@ To add features to the extension please follow these steps:
 
    - Clone your forked repository to your local machine:
      ```bash
-     git clone https://github.com/EL-OUARDY/alx-holberton-intranet-themes
+     git clone https://github.com/your-username/alx-holberton-intranet-themes
      ```
 
 3. **Create a New Branch**:
