@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ALX Holberton Intranet Themes",
+  "name": "ALX Holberton Themes & Code Highlighting +",
   "version": "1.0",
-  "description": "Custom themes for ALX Holberton School intranet",
+  "description": "Custom themes and creative tools for ALX Holberton School intranet",
   "permissions": [
     "activeTab",
     "scripting",

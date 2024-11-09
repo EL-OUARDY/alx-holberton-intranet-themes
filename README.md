@@ -123,6 +123,7 @@ Here's an overview of key files and directories:
 ## Contribution
 
 If you’d like to add your own theme, simply create a `JSON` file that contains details about your theme, such as colors and other relevant information (see this [\_example.json](./public/themes/_example.json)). The extension is configured to automatically load themes from this directory, so you don’t have to worry about any additional setup.
+Remember, adding a file/theme to the extension folder will require you to reload the extension from the Chrome settings.
 
 ### Adding Features
 

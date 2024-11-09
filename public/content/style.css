@@ -26,6 +26,16 @@ which will load them from the corresponding theme.json file.
     box-shadow: none !important;
 }
 
+.intanet-themes input:focus,
+.intanet-themes input:-webkit-autofill,
+.intanet-themes input:-webkit-autofill:hover,
+.intanet-themes input:-webkit-autofill:focus,
+.intanet-themes input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--primary-background) inset !important;
+    -webkit-text-fill-color: var(--secondary-foreground) !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
 .intanet-themes a {
     color: var(--primary) !important;
 }
