@@ -7,6 +7,10 @@ to Enhance Students Intranet Experience
 
 ![English ⇔ Darija Translator Project](./public/screenshots/vs-dark.png)
 
+Watch demo video: [https://www.youtube.com/watch?v=\_TzPtjjdMDY&t=16s](https://www.youtube.com/watch?v=_TzPtjjdMDY&t=16s)
+
+<hr />
+
 📢 Before diving into the details, I want to clarify something important: I’ve made it incredibly easy for students to contribute and create their own themes. You only need to add a single JSON file containing the theme's color palette and the extension will handle the rest! [_Check how to add your own theme_](#contribution)
 
 ## Table of Contents

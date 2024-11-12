@@ -4,8 +4,6 @@
   "version": "1.0",
   "description": "Custom themes and creative tools for ALX Holberton School intranet",
   "permissions": [
-    "activeTab",
-    "scripting",
     "storage"
   ],
   "action": {
