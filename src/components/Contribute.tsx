@@ -18,7 +18,7 @@ function Contribute() {
           href={REPO_LINK}
           target="_blank"
           className={
-            buttonVariants({ variant: "default" }) + "cursor-pointer text-xs"
+            buttonVariants({ variant: "outline" }) + "cursor-pointer text-xs"
           }
         >
           <Github className="mr-2 size-4" /> Make your own theme

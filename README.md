@@ -5,7 +5,7 @@
 A Collection of Stunning Themes and Creative Tools
 to Enhance Students Intranet Experience
 
-![English ⇔ Darija Translator Project](./public/screenshots/vs-dark.png)
+![ALX Intranet Themes](./public/screenshots/vs-dark.png)
 
 Watch demo video: [https://www.youtube.com/watch?v=\_TzPtjjdMDY&t=16s](https://www.youtube.com/watch?v=_TzPtjjdMDY&t=16s)
 
