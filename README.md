@@ -57,7 +57,7 @@ The journey of studying at ALX has been truly amazing, and now we’re at the fi
 
 ### Method 2: `Chrome Web Store`
 
-The extension will be available on the Chrome Web Store soon! Stay tuned for updates.
+The extension is now available on the Chrome Web Store. [_click here_](https://chromewebstore.google.com/detail/alx-holberton-themes-code/emoclfafkepielodpfejpicjoamogjha)
 
 ## Development
 
