@@ -18,7 +18,8 @@
     {
       "matches": [
         "https://intranet.alxswe.com/*",
-        "https://intranet.hbtn.io/*"
+        "https://intranet.hbtn.io/*",
+        "https://savanna.alxafrica.com/*"
       ],
       "js": [
         "content/highlight.min.js",
