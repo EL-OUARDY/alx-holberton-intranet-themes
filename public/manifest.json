@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ALX Holberton Themes & Code Highlighting +",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Custom themes and creative tools for ALX Holberton School intranet",
   "permissions": [
     "storage"
@@ -35,7 +35,8 @@
     {
       "resources": [
         "content/code.css",
-        "content/code-dark.css"
+        "content/code-dark.css",
+        "logo.svg"
       ],
       "matches": [
         "<all_urls>"

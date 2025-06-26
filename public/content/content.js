@@ -20,10 +20,10 @@ chrome.storage.onChanged.addListener(function (changes) {
 function applyTheme(state) {
     // check if extension is enabled
     if (state.isEnabled) {
-        document.documentElement.classList.add("intanet-themes");
+        document.documentElement.classList.add("intranet-themes");
     }
     else
-        document.documentElement.classList.remove("intanet-themes");
+        document.documentElement.classList.remove("intranet-themes");
     // add colors as CSS varibales
     const colors = state.activeTheme.colors;
     for (const key in colors) {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // create back button when focus mode is on
     createFocusModeControls();
     // highlight code syntax
-    if (root.classList.contains("intanet-themes")) {
+    if (root.classList.contains("intranet-themes")) {
         hljs.configure({
             classPrefix: "code-highlight-",
             ignoreUnescapedHTML: true,
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function createFocusModeControls() {
     // Create Back Button
-    const projectElement = document.querySelector("html.intanet-themes .project");
+    const projectElement = document.querySelector("html.intranet-themes .project");
     if (projectElement) {
         // Create the button element
         const button = document.createElement("button");
@@ -111,7 +111,7 @@ function createFocusModeControls() {
         projectElement.appendChild(button);
     }
     // Create Focus Mode Button
-    const projectTitleElement = document.querySelector("html.intanet-themes .project>div>h1");
+    const projectTitleElement = document.querySelector("html.intranet-themes .project h1");
     if (projectTitleElement) {
         // Create the button element
         const button = document.createElement("span");

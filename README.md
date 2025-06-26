@@ -45,7 +45,11 @@ The journey of studying at ALX has been truly amazing, and now we’re at the fi
 
 ## Installation
 
-### Method 1: `Manually`
+### Method 1: `Chrome Web Store`
+
+The extension is now available on the Chrome Web Store. [_click here_](https://chromewebstore.google.com/detail/alx-holberton-themes-code/emoclfafkepielodpfejpicjoamogjha)
+
+### Method 2: `Manually`
 
 1. **Download the ZIP File:** Get the latest version of the extension from the [Releases](https://github.com/EL-OUARDY/alx-holberton-intranet-themes/releases) page.
 2. **Extract the Files:** Unzip the downloaded file to a folder on your computer.
@@ -54,10 +58,6 @@ The journey of studying at ALX has been truly amazing, and now we’re at the fi
    - Enable **Developer mode** by toggling the switch in the top right corner.
    - Click on **Load unpacked** and select the folder where you extracted the files.
 4. **Enjoy the Extension**: It should now be installed and ready to use!
-
-### Method 2: `Chrome Web Store`
-
-The extension is now available on the Chrome Web Store. [_click here_](https://chromewebstore.google.com/detail/alx-holberton-themes-code/emoclfafkepielodpfejpicjoamogjha)
 
 ## Development
 

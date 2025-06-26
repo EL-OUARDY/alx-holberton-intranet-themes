@@ -4,327 +4,327 @@ which will load them from the corresponding theme.json file.
 */
 
 /* Global */
-.intanet-themes body {
+.intranet-themes body {
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
     font-size: var(--font-size) !important;
 }
 
-.intanet-themes .project pre code {
+.intranet-themes .project pre code {
     font-size: var(--code-font-size) !important;
 }
 
-.intanet-themes ::selection {
+.intranet-themes ::selection {
     color: var(--user-text-select-color) !important;
     background-color: var(--user-text-select-background) !important;
 }
 
-.intanet-themes input,
-.intanet-themes .form-control {
+.intranet-themes input,
+.intranet-themes .form-control {
     color: var(--secondary-foreground) !important;
     background-color: var(--primary-background) !important;
     box-shadow: none !important;
 }
 
-.intanet-themes input:focus,
-.intanet-themes input:-webkit-autofill,
-.intanet-themes input:-webkit-autofill:hover,
-.intanet-themes input:-webkit-autofill:focus,
-.intanet-themes input:-webkit-autofill:active {
+.intranet-themes input:focus,
+.intranet-themes input:-webkit-autofill,
+.intranet-themes input:-webkit-autofill:hover,
+.intranet-themes input:-webkit-autofill:focus,
+.intranet-themes input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px var(--primary-background) inset !important;
     -webkit-text-fill-color: var(--secondary-foreground) !important;
     transition: background-color 5000s ease-in-out 0s !important;
 }
 
-.intanet-themes a {
+.intranet-themes a {
     color: var(--primary) !important;
 }
 
-.intanet-themes * {
+.intranet-themes * {
     border-color: var(--border) !important;
     box-shadow: none !important;
 }
 
-.intanet-themes small {
+.intranet-themes small {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes li.list-group-item i {
+.intranet-themes li.list-group-item i {
     margin-right: 5px !important;
 }
 
-.intanet-themes button,
-.intanet-themes .btn.btn-default,
-.intanet-themes .btn.btn-primary,
-.intanet-themes input[type="submit"] {
+.intranet-themes button,
+.intranet-themes .btn.btn-default,
+.intranet-themes .btn.btn-primary,
+.intranet-themes input[type="submit"] {
     background-color: var(--primary-button) !important;
     color: var(--button-foreground) !important;
     border-color: var(--primary-button-hover) !important;
     outline: none !important;
 }
 
-.intanet-themes button:hover,
-.intanet-themes .btn.btn-default:hover,
-.intanet-themes .btn.btn-primary:hover,
-.intanet-themes input[type="submit"]:hover {
+.intranet-themes button:hover,
+.intranet-themes .btn.btn-default:hover,
+.intranet-themes .btn.btn-primary:hover,
+.intranet-themes input[type="submit"]:hover {
     color: var(--button-foreground-hover) !important;
 }
 
-.intanet-themes span.datetime {
+.intranet-themes span.datetime {
     color: var(--muted-foreground) !important;
     font-weight: normal !important;
 }
 
-.intanet-themes .nav-tabs>li.active>a,
-.intanet-themes .nav-tabs>li.active>a:hover,
-.intanet-themes .nav-tabs>li.active>a:focus {
+.intranet-themes .nav-tabs>li.active>a,
+.intranet-themes .nav-tabs>li.active>a:hover,
+.intranet-themes .nav-tabs>li.active>a:focus {
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .nav>li>a:hover,
-.intanet-themes .nav>li>a:focus {
+.intranet-themes .nav>li>a:hover,
+.intranet-themes .nav>li>a:focus {
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .text-primary {
+.intranet-themes .text-primary {
     color: var(--primary) !important;
 }
 
-.intanet-themes .text-success {
+.intranet-themes .text-success {
     color: var(--success) !important;
 }
 
-.intanet-themes .text-danger {
+.intranet-themes .text-danger {
     color: var(--destructive) !important;
 }
 
-.intanet-themes .btn-outline-primary {
+.intranet-themes .btn-outline-primary {
     background-color: transparent !important;
     color: var(--primary) !important;
     border-color: var(--primary) !important;
     outline: none !important;
 }
 
-.intanet-themes .btn-outline-primary:hover {
+.intranet-themes .btn-outline-primary:hover {
     background-color: transparent !important;
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.intanet-themes .btn-success {
+.intranet-themes .btn-success {
     background-color: var(--success-button) !important;
     color: var(--button-foreground) !important;
     border-color: var(--success-button-hover) !important;
     outline: none !important;
 }
 
-.intanet-themes .btn-success:hover {
+.intranet-themes .btn-success:hover {
     background-color: var(--success-button-hover) !important;
     color: var(--button-foreground-hover) !important;
 }
 
-.intanet-themes .btn-secondary,
-.intanet-themes .btn-warning {
+.intranet-themes .btn-secondary,
+.intranet-themes .btn-warning {
     background-color: var(--secondary-button) !important;
     color: var(--button-foreground) !important;
     border-color: var(--secondary-button-hover) !important;
     outline: none !important;
 }
 
-.intanet-themes .btn-secondary:hover,
-.intanet-themes .btn-warning:hover {
+.intranet-themes .btn-secondary:hover,
+.intranet-themes .btn-warning:hover {
     background-color: var(--secondary-button-hover) !important;
     color: var(--button-foreground-hover) !important;
 }
 
-.intanet-themes .btn-danger {
+.intranet-themes .btn-danger {
     background-color: var(--destructive-button) !important;
     color: var(--button-foreground) !important;
     border-color: var(--destructive-button-hover) !important;
     outline: none !important;
 }
 
-.intanet-themes .btn-danger:hover {
+.intranet-themes .btn-danger:hover {
     background-color: var(--destructive-button-hover) !important;
     color: var(--button-foreground-hover) !important;
 }
 
-.intanet-themes button:hover,
-.intanet-themes .btn.btn-default:hover,
-.intanet-themes input[type="submit"]:hover {
+.intranet-themes button:hover,
+.intranet-themes .btn.btn-default:hover,
+.intranet-themes input[type="submit"]:hover {
     background-color: var(--primary-button-hover) !important;
     color: var(--button-foreground-hover) !important;
     border-color: var(--primary-button-hover);
 }
 
-.intanet-themes .bg-primary {
+.intranet-themes .bg-primary {
     background-color: var(--primary) !important;
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .list-group-item {
+.intranet-themes .list-group-item {
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .spinner>div {
+.intranet-themes .spinner>div {
     background-color: var(--primary) !important;
 
 }
 
-.intanet-themes .panel {
+.intranet-themes .panel {
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .panel-footer {
+.intranet-themes .panel-footer {
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .panel.panel-default .panel-heading .panel-title {
+.intranet-themes .panel.panel-default .panel-heading .panel-title {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .panel.panel-default {
+.intranet-themes .panel.panel-default {
     border-color: var(--border) !important;
 }
 
-.intanet-themes .panel.panel-default li.list-group-item ul {
+.intranet-themes .panel.panel-default li.list-group-item ul {
     margin-top: 5px !important;
 }
 
-.intanet-themes .panel-default>.panel-heading {
+.intranet-themes .panel-default>.panel-heading {
     color: var(--secondary-foreground) !important;
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .panel.panel-default .panel-heading .panel-title i.panel-title-icon {
+.intranet-themes .panel.panel-default .panel-heading .panel-title i.panel-title-icon {
     color: var(--secondary-foreground) !important;
     background-color: var(--secondary-background) !important;
 }
 
-.intanet-themes .text-muted {
+.intranet-themes .text-muted {
     color: var(--muted-foreground) !important;
 }
 
-.intanet-themes .dropdown-menu {
+.intranet-themes .dropdown-menu {
     background-color: var(--secondary-background) !important;
 }
 
-.intanet-themes .dropdown-menu>li>a {
+.intranet-themes .dropdown-menu>li>a {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .dropdown-menu>li .text-muted {
+.intranet-themes .dropdown-menu>li .text-muted {
     color: var(--success) !important;
     margin-top: 4px;
 }
 
-.intanet-themes .dropdown-menu>li a:hover {
+.intranet-themes .dropdown-menu>li a:hover {
     background-color: var(--muted-background) !important;
 }
 
-.intanet-themes hr {
+.intranet-themes hr {
     border-color: var(--border) !important;
 }
 
-.intanet-themes table {
+.intranet-themes table {
     color: var(--secondary-foreground) !important;
     border-radius: 10px !important;
 }
 
-.intanet-themes table tr {
+.intranet-themes table tr {
     background-color: var(--primary-background) !important;
     margin-bottom: 20px !important;
 }
 
-.intanet-themes table img {
+.intranet-themes table img {
     border-radius: 5px !important;
 }
 
-.intanet-themes .border-primary {
+.intranet-themes .border-primary {
     border-color: var(--primary) !important;
 }
 
-.intanet-themes img.placeholder-user {
+.intranet-themes img.placeholder-user {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     height: 50px !important;
     width: 50px !important;
 }
 
-.intanet-themes h1,
-.intanet-themes h2 {
+.intranet-themes h1,
+.intranet-themes h2 {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .form-control {
+.intranet-themes .form-control {
     height: initial;
 }
 
-.intanet-themes .gap {
+.intranet-themes .gap {
     margin-top: 25px !important;
 }
 
-.intanet-themes .user-reports-card .alert {
+.intranet-themes .user-reports-card .alert {
     border: 0 !important;
     padding: 10px 24px 0px !important;
 }
 
-.intanet-themes .modal[data-model-path="user_report"] .list-group-item {
+.intranet-themes .modal[data-model-path="user_report"] .list-group-item {
     margin-top: 10px !important;
 }
 
 
-.intanet-themes .label.label-info,
-.intanet-themes .label.label-default {
+.intranet-themes .label.label-info,
+.intranet-themes .label.label-default {
     background-color: var(--secondary-background) !important;
     color: var(--secondary-foreground) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .alert.alert-info {
+.intranet-themes .alert.alert-info {
     background-color: var(--primary-background) !important;
     color: var(--info) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .label.label-warning {
+.intranet-themes .label.label-warning {
     background-color: var(--secondary) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .label.label-success,
-.intanet-themes .alert.alert-success {
+.intranet-themes .label.label-success,
+.intranet-themes .alert.alert-success {
     background-color: var(--primary-background) !important;
     color: var(--success) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .label.label-primary,
-.intanet-themes .alert.alert-primary {
+.intranet-themes .label.label-primary,
+.intranet-themes .alert.alert-primary {
     background-color: var(--primary) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .alert.alert-danger {
+.intranet-themes .alert.alert-danger {
     background-color: var(--primary-background) !important;
     color: var(--destructive) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .well {
+.intranet-themes .well {
     background-color: var(--primary-background) !important;
     color: var(--success) !important;
 }
 
-.intanet-themes .fs-small {
+.intranet-themes .fs-small {
     font-size: 14px !important;
 }
 
-.intanet-themes textarea {
+.intranet-themes textarea {
     background-color: var(--code-background) !important;
     color: var(--code-foreground) !important;
     border-color: var(--border) !important;
@@ -332,61 +332,61 @@ which will load them from the corresponding theme.json file.
 
 }
 
-.intanet-themes code {
+.intranet-themes code {
     background-color: var(--secondary) !important;
     color: var(--primary-background) !important;
     border-color: var(--secondary-button-hover) !important;
     margin-right: 5px !important;
 }
 
-.intanet-themes .formatted-content pre {
+.intranet-themes .formatted-content pre {
     color: var(--primary) !important;
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes table:not(.intanet-themes body>table),
-.intanet-themes table tr:not(.intanet-themes body>table tr),
-.intanet-themes table td:not(.intanet-themes body>table td) {
+.intranet-themes table:not(.intranet-themes body>table),
+.intranet-themes table tr:not(.intranet-themes body>table tr),
+.intranet-themes table td:not(.intranet-themes body>table td) {
     border-color: var(--border) !important;
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .modal .modal-content {
+.intranet-themes .modal .modal-content {
     background-color: var(--secondary-background) !important;
 }
 
-.intanet-themes .modal .modal-content .modal-title {
+.intranet-themes .modal .modal-content .modal-title {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .modal .modal-content .modal-header button.close {
+.intranet-themes .modal .modal-content .modal-header button.close {
     background-color: transparent !important;
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .modal .modal-content .modal-header {
+.intranet-themes .modal .modal-content .modal-header {
     border-color: var(--primary-background) !important;
 }
 
-.intanet-themes .copyright {
+.intranet-themes .copyright {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes label.control-label {
+.intranet-themes label.control-label {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .help-block {
+.intranet-themes .help-block {
     color: var(--muted-foreground) !important;
 }
 
-.intanet-themes .help-block code {
+.intranet-themes .help-block code {
     background-color: var(--primary-background) !important;
     color: var(--primary) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes input[type="file"]::-webkit-file-upload-button {
+.intranet-themes input[type="file"]::-webkit-file-upload-button {
     background-color: var(--primary-button);
     color: var(--secondary-foreground) !important;
     border: var(--border) !important;
@@ -394,55 +394,59 @@ which will load them from the corresponding theme.json file.
     cursor: pointer !important;
 }
 
-.intanet-themes .border-left-success {
+.intranet-themes .border-left-success {
     border-left-color: var(--success) !important;
 }
 
-.intanet-themes .border-left-info {
+.intranet-themes .border-left-info {
     border-left-color: var(--info) !important;
 }
 
 /* Header */
-.intanet-themes .header,
-.intanet-themes .navbar {
+.intranet-themes .header .logo-container.bg-white {
+    background-color: transparent !important
+}
+
+.intranet-themes .header,
+.intranet-themes .navbar {
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .header .header-left .hamburger,
-.intanet-themes .navbar .navbar-toggle {
+.intranet-themes .header .header-left .hamburger,
+.intranet-themes .navbar .navbar-toggle {
     color: var(--secondary-foreground) !important;
     font-size: 22px !important;
     border: 0 !important;
 }
 
-.intanet-themes .header .header-left .hamburger:hover,
-.intanet-themes .navbar .navbar-toggle {
+.intranet-themes .header .header-left .hamburger:hover,
+.intranet-themes .navbar .navbar-toggle {
     color: var(--primary-foreground) !important;
     background-color: transparent !important;
 }
 
-.intanet-themes .header .logo,
-.intanet-themes .navbar .logo,
-.intanet-themes .video-rooms .colored-icon::before {
+.intranet-themes .header .logo,
+.intranet-themes .navbar .logo,
+.intranet-themes .video-rooms .colored-icon::before {
     /* Ensure the logo matches the theme mode */
     filter: invert(var(--logo-filter-invert)) !important;
     width: var(--logo-width) !important;
     height: var(--logo-height) !important;
 }
 
-.intanet-themes .navbar-default .navbar-collapse,
-.intanet-themes .navbar-default .navbar-form {
+.intranet-themes .navbar-default .navbar-collapse,
+.intranet-themes .navbar-default .navbar-form {
     border-color: var(--border) !important;
 }
 
-.intanet-themes .navigation>ul>li a .visible-xs {
+.intranet-themes .navigation>ul>li a .visible-xs {
     color: var(--secondary-foreground) !important;
 }
 
 /* Sidebar */
-.intanet-themes .sidebar {
+.intranet-themes .sidebar {
     background-color: var(--primary-background) !important;
     color: var(--secondary-foreground) !important;
     border-color: var(--border) !important;
@@ -450,44 +454,44 @@ which will load them from the corresponding theme.json file.
 
 }
 
-.intanet-themes .sidebar a {
+.intranet-themes .sidebar a {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .sidebar>ul>li:has(.active) {
+.intranet-themes .sidebar>ul>li:has(.active) {
     background-color: var(--muted-background) !important;
     color: var(--primary) !important;
     font-weight: bold !important;
 }
 
-.intanet-themes .sidebar>ul>li:hover {
+.intranet-themes .sidebar>ul>li:hover {
     background-color: var(--muted-background) !important;
 }
 
-.intanet-themes .sidebar>ul>li:hover * {
+.intranet-themes .sidebar>ul>li:hover * {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .sidebar>ul>li:has(.active):hover * {
+.intranet-themes .sidebar>ul>li:has(.active):hover * {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .sidebar>ul>li:has(.active):hover .icon i {
+.intranet-themes .sidebar>ul>li:has(.active):hover .icon i {
     color: var(--primary) !important;
 }
 
-.intanet-themes .sidebar>ul>li:hover .fa-discord {
+.intranet-themes .sidebar>ul>li:hover .fa-discord {
     /*Discord icon*/
     color: #5865f2 !important;
 }
 
-.intanet-themes .navigation>ul>li a .icon.active,
-.intanet-themes .navigation>ul>li a .image.active {
+.intranet-themes .navigation>ul>li a .icon.active,
+.intranet-themes .navigation>ul>li a .image.active {
     background-color: transparent !important;
     color: var(--primary) !important;
 }
 
-.intanet-themes .sidebar.navigation>ul>li:last-of-type {
+.intranet-themes .sidebar.navigation>ul>li:last-of-type {
     background-color: var(--primary-background) !important;
     border: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -495,7 +499,7 @@ which will load them from the corresponding theme.json file.
 
 }
 
-.intanet-themes body:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
+.intranet-themes body:not(.sidebar-collapsed) .sidebar.navigation>ul>li:last-of-type {
     background-color: var(--secondary-background) !important;
     width: 230px !important;
     margin-left: 10px !important;
@@ -503,152 +507,200 @@ which will load them from the corresponding theme.json file.
     padding: 5px 0 !important;
 }
 
-.intanet-themes body.sidebar-collapsed .sidebar.navigation>ul>li:last-of-type {
+.intranet-themes body.sidebar-collapsed .sidebar.navigation>ul>li:last-of-type {
     width: 69.2px !important;
 }
 
-.intanet-themes body.sidebar-collapsed .sidebar.navigation>ul>li {
+.intranet-themes body.sidebar-collapsed .sidebar.navigation>ul>li {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
 }
 
-.intanet-themes .navigation>ul>li .text-muted {
+.intranet-themes .navigation.expanded>ul>li .text-muted {
     color: var(--secondary-foreground) !important;
+    display: inline-block !important;
 }
 
-.intanet-themes .navigation>ul>li .text-muted:hover {
+.intranet-themes .navigation>ul>li .text-muted:hover {
     color: var(--primary-foreground) !important;
 }
 
 /* Score Bar */
-.intanet-themes #student-switch-curriculum {
+.intranet-themes #student-switch-curriculum {
     background-color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes #student-switch-curriculum .text-muted {
+.intranet-themes #student-switch-curriculum .text-muted {
     color: var(--success) !important;
     margin-top: 4px;
 }
 
-.intanet-themes #student-switch-curriculum ul .text-muted {
+.intranet-themes #student-switch-curriculum ul .text-muted {
     color: var(--secondary) !important;
 }
 
-.intanet-themes #student-switch-curriculum .dropdown-menu {
+.intranet-themes #student-switch-curriculum .dropdown-menu {
     background-color: var(--primary-background) !important;
 }
 
 
-.intanet-themes .fa-angle-up,
-.intanet-themes .fa-angle-down {
+.intranet-themes .fa-angle-up,
+.intranet-themes .fa-angle-down {
     color: var(--secondary-foreground) !important;
 }
 
 /* Dashboard */
-.intanet-themes #student-home-events-card time {
+.intranet-themes #student-home-events-card time {
     background-color: var(--secondary-background) !important;
     box-shadow: none !important;
     height: 6em !important;
     width: 6em !important;
 }
 
-.intanet-themes #student-home-events-card time span {
+.intranet-themes .card,
+.intranet-themes .card .card-header,
+.intranet-themes .card .card-footer {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes table thead th {
+    background-color: var(--primary-background) !important;
+}
+
+.intranet-themes table tbody td {
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes .card table .fa-calendar {
+    color: var(--primary) !important;
+}
+
+.intranet-themes table tr th,
+.intranet-themes table tr td,
+.intranet-themes table thead tr th,
+.intranet-themes table thead tr td,
+.intranet-themes table tbody tr td {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes .accordion,
+.intranet-themes .accordion .accordion-body {
+    background-color: var(--primary-background) !important;
+    color: var(--secondary-foreground) !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-color: var(--primary-background) !important;
+}
+
+.intranet-themes #student-home-events-card time span {
     color: var(--secondary-foreground) !important;
     font-size: 2em !important;
 }
 
-.intanet-themes #student-home-events-card time strong {
+.intranet-themes #student-home-events-card time strong {
     font-size: 1.5em !important;
 }
 
-.intanet-themes .panel .bpi-status span.datetime {
+.intranet-themes .panel .bpi-status span.datetime {
     color: var(--muted-foreground) !important;
 }
 
-.intanet-themes .panel .bpi-status strong {
+.intranet-themes .panel .bpi-status strong {
     font-weight: normal !important;
 }
 
-.intanet-themes .panel.user-reports-card~.panel .panel-heading span.font-weight-bold {
+.intranet-themes .panel.user-reports-card~.panel .panel-heading span.font-weight-bold {
     /* Scores' panel */
     color: var(--success) !important;
     font-weight: normal !important;
 }
 
-.intanet-themes .student-home .panel .fa-calendar {
+.intranet-themes .student-home .panel .fa-calendar {
     color: var(--primary-accent) !important;
 }
 
-.intanet-themes .panel .fa-clock,
-.intanet-themes .panel .fa-location-dot {
+.intranet-themes .panel .fa-clock,
+.intranet-themes .panel .fa-location-dot {
     color: var(--info) !important;
     opacity: 0.8 !important;
 }
 
-.intanet-themes .student-home .panel {
+.intranet-themes .student-home .panel {
     border-radius: 10px !important;
 }
 
-.intanet-themes .modal table td.text-right.font-weight-bold {
+.intranet-themes .modal table td.text-right.font-weight-bold {
     color: var(--success) !important;
 }
 
-.intanet-themes .modal table td.text-right {
+.intranet-themes .modal table td.text-right {
     color: var(--secondary) !important;
 }
 
-.intanet-themes .student-home .label.label-success,
-.intanet-themes .student-home .alert.alert-success {
+.intranet-themes .student-home .label.label-success,
+.intranet-themes .student-home .alert.alert-success {
     background-color: var(--secondary-background) !important;
     color: var(--success) !important;
     border-color: var(--border) !important;
 }
 
-/* Score popup */
-.intanet-themes .student-home .modal .modal-content table a {
+.intranet-themes .text-end {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .student-home .modal .modal-content table tr.bg-primary {
+/* Score popup */
+.intranet-themes .student-home .modal .modal-content table a {
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes .modal .modal-header button.btn-close {
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes .student-home .modal .modal-content table tr.bg-primary {
     background-color: var(--primary) !important;
     color: var(--primary-background) !important;
     font-weight: bold !important;
     border: 2px solid var(--primary) !important;
 }
 
-.intanet-themes .student-home .modal .modal-content table tr.bg-primary td.text-right {
+.intranet-themes .student-home .modal .modal-content table tr.bg-primary td.text-right {
     background-color: var(--primary-background) !important;
     color: var(--success) !important;
 }
 
 
-.intanet-themes .student-home .modal .modal-content table tr td.text-right {
+.intranet-themes .student-home .modal .modal-content table tr td.text-right {
     color: var(--muted-foreground) !important;
     font-weight: bold !important;
 }
 
 /* Custom scroll bar */
-.intanet-themes *::-webkit-scrollbar-track {
+.intranet-themes *::-webkit-scrollbar-track {
     background-color: var(--primary-background) !important;
     border-radius: 8px !important;
 }
 
-.intanet-themes *::-webkit-scrollbar {
+.intranet-themes *::-webkit-scrollbar {
     width: 8px !important;
     height: 8px !important;
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes *::-webkit-scrollbar-thumb {
+.intranet-themes *::-webkit-scrollbar-thumb {
     border-radius: 8px !important;
     background-color: var(--primary) !important;
 }
 
-html.intanet-themes,
-.intanet-themes body {
+html.intranet-themes,
+.intranet-themes body {
     /* hide scrollbar of the body/html */
     /* For Firefox */
     scrollbar-width: none !important;
@@ -656,13 +708,13 @@ html.intanet-themes,
     -ms-overflow-style: none !important;
 }
 
-.intanet-themes #cody-wrapper .cody-launcher body::-webkit-scrollbar {
+.intranet-themes #cody-wrapper .cody-launcher body::-webkit-scrollbar {
     /* For Chrome, Safari, and other WebKit browsers */
     display: none !important;
 }
 
 /* Search */
-.intanet-themes #search-button {
+.intranet-themes #search-button {
     color: var(--primary) !important;
     background-color: var(--secondary-background) !important;
     border: none !important;
@@ -676,29 +728,30 @@ html.intanet-themes,
     align-items: center !important;
 }
 
-.intanet-themes #search-button i {
+.intranet-themes #search-button i {
     font-size: 24px !important;
     position: static !important;
     margin: 0 !important;
 }
 
-.intanet-themes #search-bar {
+.intranet-themes #search-bar {
     color: var(--primary-foreground) !important;
     background-color: var(--primary-button) !important;
     border-color: var(--primary-button-hover) !important;
 }
 
-.intanet-themes #search-bar::placeholder {
+.intranet-themes #search-bar::placeholder,
+.intranet-themes input::placeholder {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes .modal:has(#search-bar) {
+.intranet-themes .modal:has(#search-bar) {
     z-index: 99999;
 }
 
 
 /* Assistant button */
-.intanet-themes #cody-wrapper .cody-launcher {
+.intranet-themes #cody-wrapper .cody-launcher {
     color: var(--primary) !important;
     background-color: var(--secondary-background) !important;
     animation: none !important;
@@ -706,30 +759,34 @@ html.intanet-themes,
     border: 2px solid var(--primary) !important;
 }
 
-.intanet-themes #cody-wrapper .cody-launcher:hover {
+.intranet-themes #cody-wrapper .cody-launcher:hover {
     scale: 1 !important;
 }
 
 /* Profile Page */
-.intanet-themes a.btn[href="/auth/sign_out"] {
+.intranet-themes a.btn[href="/auth/sign_out"] {
     background-color: var(--destructive-button) !important;
     border-color: var(--destructive-button-hover) !important;
     color: var(--button-foreground) !important;
     margin-bottom: 40px !important;
 }
 
-.intanet-themes a.btn[href="/auth/sign_out"]:hover {
+.intranet-themes .form-text {
+    color: var(--secondary-foreground) !important;
+}
+
+.intranet-themes a.btn[href="/auth/sign_out"]:hover {
     background-color: var(--destructive-button-hover) !important;
     color: var(--button-foreground-hover) !important;
 }
 
-.intanet-themes input[type="file"]::file-selector-button {
+.intranet-themes input[type="file"]::file-selector-button {
     color: var(--button-foreground) !important;
 }
 
 /* Peers Page */
 
-.intanet-themes .universal-pagination {
+.intranet-themes .universal-pagination {
     bottom: unset !important;
     float: unset !important;
     position: unset !important;
@@ -743,73 +800,73 @@ html.intanet-themes,
 }
 
 /* Sandboxes Page */
-.intanet-themes .sandboxes-filters .btn-primary {
+.intranet-themes .sandboxes-filters .btn-primary {
     background: var(--primary-button) !important;
     color: var(--button-foreground) !important;
 }
 
-.intanet-themes .btn-webterm,
-.intanet-themes .btn-webterm:hover {
+.intranet-themes .btn-webterm,
+.intranet-themes .btn-webterm:hover {
     background-color: var(--secondary-background) !important;
     color: var(--success) !important;
     border-color: var(--success) !important;
 }
 
-.intanet-themes .btn-webterm>i[class^='fa-'] {
+.intranet-themes .btn-webterm>i[class^='fa-'] {
     color: var(--success) !important;
 }
 
 /* Conferencing Rooms Page */
-.intanet-themes .panel.video-rooms-head .btn-info,
-.intanet-themes .panel.video-rooms-head .btn-info:hover {
+.intranet-themes .panel.video-rooms-head .btn-info,
+.intranet-themes .panel.video-rooms-head .btn-info:hover {
     background-color: var(--secondary-background) !important;
     color: var(--info) !important;
     border-color: var(--border) !important
 }
 
-.intanet-themes .panel.video-rooms-head .btn-default,
-.intanet-themes .panel.video-rooms-head .btn-default:hover {
+.intranet-themes .panel.video-rooms-head .btn-default,
+.intranet-themes .panel.video-rooms-head .btn-default:hover {
     background-color: var(--secondary-background) !important;
     color: var(--button-foreground) !important;
     border-color: var(--border) !important
 }
 
 /* Pagination */
-.intanet-themes .pagination .page-gap,
-.intanet-themes .pagination .disabled,
-.intanet-themes .pagination [aria-disabled=true],
-.intanet-themes .pagination .page-gap:hover,
-.intanet-themes .pagination .disabled:hover,
-.intanet-themes .pagination [aria-disabled=true]:hover {
+.intranet-themes .pagination .page-gap,
+.intranet-themes .pagination .disabled,
+.intranet-themes .pagination [aria-disabled=true],
+.intranet-themes .pagination .page-gap:hover,
+.intranet-themes .pagination .disabled:hover,
+.intranet-themes .pagination [aria-disabled=true]:hover {
     border-color: transparent !important;
     color: var(--primary) !important;
     cursor: default !important;
     opacity: 0.5 !important;
 }
 
-.intanet-themes .pagination .current,
-.intanet-themes .pagination .current:hover,
-.intanet-themes .pagination [aria-current]:not([aria-current=false]) {
+.intranet-themes .pagination .current,
+.intranet-themes .pagination .current:hover,
+.intranet-themes .pagination [aria-current]:not([aria-current=false]) {
     background-color: var(--primary) !important;
     border-color: transparent !important;
     color: var(--primary-foreground) !important;
 }
 
 /* Concept Page */
-.intanet-themes #curriculum_navigation_content .project .formatted-content {
+.intranet-themes #curriculum_navigation_content .project .formatted-content {
     margin-left: 0 !important;
 }
 
-.intanet-themes .formatted-content h2 {
+.intranet-themes .formatted-content h2 {
     margin: 20px 0 !important
 }
 
-.intanet-themes .formatted-content code {
+.intranet-themes .formatted-content code {
     color: var(--primary) !important;
     background-color: var(--primary-background) !important;
 }
 
-.intanet-themes .formatted-content img {
+.intranet-themes .formatted-content img {
     border-radius: 10px !important;
 }
 
@@ -817,288 +874,292 @@ html.intanet-themes,
 /* Student Transcript */
 @media screen,
 print {
-    .intanet-themes body {
+    .intranet-themes body {
         -webkit-print-color-adjust: exact;
     }
 
-    .intanet-themes body>table img:not(img[alt="user image"]) {
+    .intranet-themes body>table img:not(img[alt="user image"]) {
         filter: invert(var(--logo-filter-invert)) !important;
     }
 
-    .intanet-themes body>table td {
+    .intranet-themes body>table td {
         padding: 6px 20px !important;
         background: transparent !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>div,
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>div,
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div {
         background-color: var(--primary-background) !important;
         border-color: var(--border) !important;
     }
 
-    .intanet-themes body>table>tbody>tr .btn-group.font-weight-bold {
+    .intranet-themes body>table>tbody>tr .btn-group.font-weight-bold {
         color: var(--success) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2) {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2) {
         color: var(--secondary) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2)::before {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(2)::before {
         background-color: var(--primary-background) !important;
         color: var(--secondary) !important;
         margin-right: 10px !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(3)::before {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(3)::before {
         background-color: var(--primary-background) !important;
         color: var(--secondary) !important;
         margin-right: 10px !important;
 
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4) {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4) {
         color: var(--secondary-foreground) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4)::before {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>thead>tr>th:nth-child(4)::before {
         background-color: var(--primary-background) !important;
         color: var(--secondary) !important;
         margin-right: 10px !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2) {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2) {
         color: var(--secondary) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2)::before {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>thead>tr>th:nth-child(2)::before {
         background-color: var(--primary-background) !important;
         color: var(--secondary) !important;
         margin-right: 10px !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div>table>thead>tr>th {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div>table>thead>tr>th {
         background-color: var(--primary-background) !important;
         ;
         border-color: var(--border) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
         background-color: var(--primary-background) !important;
         border-bottom: 1px solid var(--border);
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr:last-child>td {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr:last-child>td {
         background-color: var(--primary-background) !important;
         border-bottom: 1px solid var(--primary-background);
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td {
         background-color: var(--primary-background) !important;
         border-color: var(--border) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div.panel-heading>h3 {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>div.panel-heading>h3 {
         background-color: var(--primary-background) !important;
         border-color: var(--border) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td,
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td,
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
         color: var(--info) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td:first-child {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(2)>table>tbody>tr>td:first-child {
         color: var(--secondary-foreground) !important;
     }
 
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td,
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td,
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td {
         color: var(--info) !important;
     }
 
-    .intanet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td:first-child {
+    .intranet-themes body>table>tbody>tr:nth-child(5)>td>div:nth-child(3)>table>tbody>tr>td:first-child {
         color: var(--secondary-foreground) !important;
     }
 }
 
-.intanet-themes .table_width {
+.intranet-themes .table_width {
     width: 100%;
 }
 
-.intanet-themes .td_key_styles {
+.intranet-themes .td_key_styles {
     color: var(--info) !important;
 }
 
 /* Event Page */
-.intanet-themes time {
+.intranet-themes time {
     background-color: var(--primary-background) !important;
     box-shadow: var(--secondary-background) 0px 0px 10px 2px !important;
     height: 4em !important;
     width: 4em !important;
 }
 
-.intanet-themes time strong {
+.intranet-themes time strong {
     font-size: 0.6em !important;
     line-height: 1.6em !important;
 }
 
-.intanet-themes time span {
+.intranet-themes time span {
     color: var(--secondary-foreground) !important;
     font-size: 1.5em !important;
 }
 
-.intanet-themes time span.text-primary {
+.intranet-themes time span.text-primary {
     color: var(--secondary-foreground) !important;
     font-size: 0.6em !important;
     margin-bottom: 5px !important;
 }
 
-.intanet-themes i.fa-solid.fa-link.fa-fw {
+.intranet-themes i.fa-solid.fa-link.fa-fw {
     color: var(--primary) !important;
 }
 
 /* Projects Page */
-.intanet-themes .project_progress_percentage.alert.alert-info {
+.intranet-themes .project_progress_percentage.alert.alert-info {
     background-color: var(--info) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .project_progress_percentage~code,
-.intanet-themes #current-projects-list-blocks code {
+.intranet-themes .project_progress_percentage~code,
+.intranet-themes #current-projects-list-blocks code {
     background-color: var(--secondary-background) !important;
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.intanet-themes #current-projects-list-blocks li a {
+.intranet-themes #current-projects-list-blocks li a {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes #current-projects-list-blocks li strong {
+.intranet-themes #current-projects-list-blocks li strong {
     color: var(--success) !important;
 }
 
-.intanet-themes #current-projects-list-blocks li em {
+.intranet-themes #current-projects-list-blocks li em {
     color: var(--secondary) !important;
 }
 
-.intanet-themes .empty-state {
+.intranet-themes .empty-state {
     margin: 20px 0 !important;
 }
 
 /* Single Project Page */
-.intanet-themes #curriculum_navigation_content .project ul#project-metadata {
+.intranet-themes #curriculum_navigation_content .project ul#project-metadata {
     font-size: 12px !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project ul#project-metadata span {
+.intranet-themes #curriculum_navigation_content .project ul#project-metadata span {
     color: var(--muted-foreground) !important;
     font-weight: bold !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .clean.well {
+.intranet-themes #curriculum_navigation_content .project .clean.well {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project span.label.label-primary {
+.intranet-themes #curriculum_navigation_content .project span.label.label-primary {
     font-size: 13px !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .clean.well ul li {
+.intranet-themes #curriculum_navigation_content .project .clean.well ul li {
     list-style: cjk-ideographic;
 }
 
-.intanet-themes #curriculum_navigation_content .project .clean.well ul li strong {
+.intranet-themes #curriculum_navigation_content .project .clean.well ul li strong {
     color: var(--primary) !important;
     font-weight: normal !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .clean.well ul ul li strong {
+.intranet-themes #curriculum_navigation_content .badge.text-bg-primary {
+    color: white !important;
+}
+
+.intranet-themes #curriculum_navigation_content .project .clean.well ul ul li strong {
     color: var(--success) !important;
     font-weight: bold !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .clean.well ul li {
+.intranet-themes #curriculum_navigation_content .project .clean.well ul li {
     color: var(--info) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .collapse-button.btn.close {
+.intranet-themes #curriculum_navigation_content .project .collapse-button.btn.close {
     font-size: 1rem !important;
     color: var(--primary) !important;
     background-color: var(--secondary-background) !important;
     text-shadow: none !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .blog_post_div {
+.intranet-themes #curriculum_navigation_content .project .blog_post_div {
     background-color: var(--secondary-background) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task-card .panel-footer .student_task_done.yes {
+.intranet-themes #curriculum_navigation_content .project .task-card .panel-footer .student_task_done.yes {
     background: var(--success) !important;
     color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project summary {
+.intranet-themes #curriculum_navigation_content .project summary {
     margin-bottom: 10px !important;
 }
 
-.intanet-themes .modal.task_get_qa_review .list-group-item {
+.intranet-themes .modal.task_get_qa_review .list-group-item {
     margin-bottom: 5px !important;
 }
 
-.intanet-themes .modal.task_get_qa_review code {
+.intranet-themes .modal.task_get_qa_review code {
     background-color: var(--primary-accent) !important;
     color: var(--button-foreground) !important;
     border: none !important;
 }
 
-.intanet-themes .modal.task_get_qa_review pre {
+.intranet-themes .modal.task_get_qa_review pre {
     background-color: var(--code-background) !important;
     color: var(--code-foreground) !important;
     border-color: var(--border) !important;
     margin: 10px 0 !important;
 }
 
-.intanet-themes .modal.task_get_qa_review pre code {
+.intranet-themes .modal.task_get_qa_review pre code {
     background-color: transparent !important;
     color: var(--code-foreground) !important;
     border: none !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task-card {
+.intranet-themes #curriculum_navigation_content .project .task-card {
     padding: 5px 0 !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task_progress_score_text {
+.intranet-themes #curriculum_navigation_content .project .task_progress_score_text {
     color: var(--secondary-foreground) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task_progress_score_text .task_score_value {
+.intranet-themes #curriculum_navigation_content .project .task_progress_score_text .task_score_value {
     color: var(--info) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar {
+.intranet-themes #curriculum_navigation_content .project .task_progress_score_bar {
     background-color: var(--secondary-background) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar {
+.intranet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar {
     background: repeating-linear-gradient(-45deg, var(--secondary-background), var(--secondary-background) 10px, var(--primary-accent) 10px, var(--primary-accent) 20px) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar .task_score_bar {
+.intranet-themes #curriculum_navigation_content .project .task_progress_score_bar .task_progress_bar .task_score_bar {
     background-color: var(--secondary-background) !important;
     border: none !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project img {
+.intranet-themes #curriculum_navigation_content .project img {
     border-radius: 10px !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project code {
+.intranet-themes #curriculum_navigation_content .project code {
     background-color: var(--secondary-background) !important;
     color: var(--secondary) !important;
     margin-right: 5px !important;
@@ -1106,150 +1167,150 @@ print {
 }
 
 
-.intanet-themes #curriculum_navigation_content .project pre {
+.intranet-themes #curriculum_navigation_content .project pre {
     background-color: var(--code-background) !important;
     color: var(--code-foreground) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project pre code {
+.intranet-themes #curriculum_navigation_content .project pre code {
     background-color: transparent !important;
     color: var(--code-foreground) !important;
     border: none !important;
 }
 
-.intanet-themes #curriculum_navigation_content .project .task-card .list-group code {
+.intranet-themes #curriculum_navigation_content .project .task-card .list-group code {
     color: var(--primary) !important;
 }
 
-.intanet-themes .review-percentage_down span {
+.intranet-themes .review-percentage_down span {
     color: var(--success) !important;
 }
 
-.intanet-themes .review-github.well,
-.intanet-themes .modal.task_correction_modal .result .well {
+.intranet-themes .review-github.well,
+.intranet-themes .modal.task_correction_modal .result .well {
     color: var(--secondary-foreground) !important;
 
 }
 
-.intanet-themes .review-github.well ul li,
-.intanet-themes .modal.task_correction_modal .result .well ul li {
+.intranet-themes .review-github.well ul li,
+.intranet-themes .modal.task_correction_modal .result .well ul li {
     margin: 4px 0 !important;
 }
 
-.intanet-themes .review-github.well strong,
-.intanet-themes .modal.task_correction_modal .result .well b {
+.intranet-themes .review-github.well strong,
+.intranet-themes .modal.task_correction_modal .result .well b {
     margin-right: 5px !important;
 }
 
-.intanet-themes .review-github.well .review-github-commit_id,
-.intanet-themes .modal.task_correction_modal .result .well ul li code {
+.intranet-themes .review-github.well .review-github-commit_id,
+.intranet-themes .modal.task_correction_modal .result .well ul li code {
     background-color: transparent !important;
     color: var(--primary) !important;
     border: 1px solid var(--primary) !important;
 }
 
-.intanet-themes .review-github.well ul li span:last-child,
-.intanet-themes .review-github.well ul li .review-github-subject,
-.intanet-themes .modal.task_correction_modal .result .well ul li span,
-.intanet-themes .modal.task_correction_modal .result .well ul li em {
+.intranet-themes .review-github.well ul li span:last-child,
+.intranet-themes .review-github.well ul li .review-github-subject,
+.intranet-themes .modal.task_correction_modal .result .well ul li span,
+.intranet-themes .modal.task_correction_modal .result .well ul li em {
     color: var(--primary) !important;
 }
 
-.intanet-themes .modal.task_correction_modal .actions .alert.alert-info {
+.intranet-themes .modal.task_correction_modal .actions .alert.alert-info {
     color: var(--success) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline {
+.intranet-themes .task_correction_modal .check-inline {
     background: transparent !important;
     padding: 8px 10px !important;
 }
 
-.intanet-themes .modal.task_correction_modal .help button {
+.intranet-themes .modal.task_correction_modal .help button {
     background: transparent !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.requirement.success,
-.intanet-themes .task_correction_modal .check-inline.code.success {
+.intranet-themes .task_correction_modal .check-inline.requirement.success,
+.intranet-themes .task_correction_modal .check-inline.code.success {
     border: 1px solid var(--success) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.requirement.fail,
-.intanet-themes .task_correction_modal .check-inline.code.fail {
+.intranet-themes .task_correction_modal .check-inline.requirement.fail,
+.intranet-themes .task_correction_modal .check-inline.code.fail {
     border: 1px solid var(--destructive) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.efficiency.success {
+.intranet-themes .task_correction_modal .check-inline.efficiency.success {
     border: 1px solid var(--success) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.efficiency.fail {
+.intranet-themes .task_correction_modal .check-inline.efficiency.fail {
     border: 1px solid var(--secondary) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.answer.success {
+.intranet-themes .task_correction_modal .check-inline.answer.success {
     border: 1px solid var(--success) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline.answer.fail {
+.intranet-themes .task_correction_modal .check-inline.answer.fail {
     border: 1px solid var(--muted-foreground) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline .fa-circle-check,
-.intanet-themes .task_correction_modal .check-inline .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline .fa-circle-check,
+.intranet-themes .task_correction_modal .check-inline .fa-circle-info {
     color: var(--success) !important;
 }
 
-.intanet-themes .task_correction_modal .check-inline .fa-circle-xmark,
-.intanet-themes .task_correction_modal .check-inline .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline .fa-circle-xmark,
+.intranet-themes .task_correction_modal .check-inline .fa-circle-info {
     color: var(--destructive);
 }
 
-.intanet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-check,
-.intanet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-check,
+.intranet-themes .task_correction_modal .check-inline.efficiency.success .fa-circle-info {
     color: var(--primary);
 }
 
-.intanet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-xmark,
-.intanet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-xmark,
+.intranet-themes .task_correction_modal .check-inline.efficiency.fail .fa-circle-info {
     color: var(--secondary);
 }
 
-.intanet-themes .task_correction_modal .check-inline.answer.success .fa-circle-check,
-.intanet-themes .task_correction_modal .check-inline.answer.success .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline.answer.success .fa-circle-check,
+.intranet-themes .task_correction_modal .check-inline.answer.success .fa-circle-info {
     color: var(--info);
 }
 
-.intanet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-xmark,
-.intanet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-info {
+.intranet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-xmark,
+.intranet-themes .task_correction_modal .check-inline.answer.fail .fa-circle-info {
     color: var(--muted-foreground);
 }
 
-.intanet-themes.dark #curriculum_navigation_content .project pre code.hljs {
+.intranet-themes.dark #curriculum_navigation_content .project pre code.hljs {
     color: #dcdcdc !important;
 }
 
-.intanet-themes.light #curriculum_navigation_content .project pre code.hljs {
+.intranet-themes.light #curriculum_navigation_content .project pre code.hljs {
     color: #000 !important;
 }
 
 
 /* Peer Learning Day */
-.intanet-themes .panel.panel-default .panel-title .v-stack.gap-2 .hstack.gap-2 {
+.intranet-themes .panel.panel-default .panel-title .v-stack.gap-2 .hstack.gap-2 {
     margin-top: 4px !important;
 }
 
-.intanet-themes .border-primary.rounded-circle {
+.intranet-themes .border-primary.rounded-circle {
     border: 2px solid var(--primary) !important;
 }
 
 /* Login Page */
 
-.intanet-themes main#content:has(.logged_out_form) {
+.intranet-themes main#content:has(.logged_out_form) {
     margin: 0 !important;
 }
 
-.intanet-themes main#content:has(.logged_out_form) article {
+.intranet-themes main#content:has(.logged_out_form) article {
     padding: 0 !important;
     height: 100% !important;
     display: flex !important;
@@ -1258,36 +1319,38 @@ print {
     align-items: center !important;
 }
 
-.intanet-themes main#content .logged_out_form {
+.intranet-themes main#content .logged_out_form {
     background-color: var(--primary-background) !important;
     border: 2px solid var(--primary) !important;
     height: fit-content !important;
 }
 
-.intanet-themes main#content .logged_out_form h2.hbtn_logo {
+.intranet-themes main#content .logged_out_form h2.hbtn_logo {
     filter: invert(var(--logo-filter-invert)) !important;
 }
 
-.intanet-themes main#content .logged_out_form .btn {
+.intranet-themes main#content .logged_out_form .btn {
     width: 100% !important;
 }
 
-.intanet-themes main#content .logged_out_form .field {
+.intranet-themes main#content .logged_out_form .field {
     text-align: left !important;
 }
 
 /* My Planning Page / Calendar */
-.intanet-themes .dhx_cal_container {
+.intranet-themes .dhx_cal_container {
     background-color: var(--primary-background) !important;
     border-radius: 10px !important;
 }
 
-.intanet-themes .dhx_cal_header {
+
+
+.intranet-themes .dhx_cal_header {
     border: 1px solid var(--border) !important;
 }
 
-.intanet-themes .dhx_cal_prev_button,
-.intanet-themes .dhx_cal_next_button {
+.intranet-themes .dhx_cal_prev_button,
+.intranet-themes .dhx_cal_next_button {
     background: none !important;
     border-color: var(--primary) !important;
     color: var(--primary);
@@ -1298,84 +1361,92 @@ print {
     text-indent: -9999px !important;
 }
 
-.intanet-themes .dhx_cal_prev_button::before {
+.intranet-themes .dhx_cal_prev_button::before {
     font-family: 'Font Awesome 6 Free' !important;
     font-weight: 900 !important;
     content: "\f060" !important;
     text-indent: 0 !important;
 }
 
-.intanet-themes .dhx_cal_next_button::before {
+.intranet-themes .dhx_cal_next_button::before {
     font-family: 'Font Awesome 6 Free' !important;
     font-weight: 900 !important;
     content: "\f061" !important;
     text-indent: 0 !important;
 }
 
-.intanet-themes .dhx_cal_today_button {
+.intranet-themes [event_id],
+.intranet-themes .dhx_cal_event_line,
+.intranet-themes [event_id].dhx_cal_event_line {
+    color: white !important;
+    background: var(--primary) !important;
+    border-left: 4px solid var(--secondary) !important;
+}
+
+.intranet-themes .dhx_cal_today_button {
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.intanet-themes .dhx_cal_my_button {
+.intranet-themes .dhx_cal_my_button {
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.intanet-themes .dhx_cal_navline .dhx_cal_date,
-.intanet-themes .dhx_cal_tab {
+.intranet-themes .dhx_cal_navline .dhx_cal_date,
+.intranet-themes .dhx_cal_tab {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .dhx_cal_navline .dhx_cal_tab.active,
-.intanet-themes .dhx_cal_navline .dhx_cal_my_button.active {
-    color: var(--primary-foreground) !important;
+.intranet-themes .dhx_cal_navline .dhx_cal_tab.active,
+.intranet-themes .dhx_cal_navline .dhx_cal_my_button.active {
+    color: white !important;
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.intanet-themes .dhx_cal_data {
+.intranet-themes .dhx_cal_data {
     border-top: 1px solid var(--border) !important;
 }
 
-.intanet-themes .dhx_scale_bar {
+.intranet-themes .dhx_scale_bar {
     background-color: var(--secondary-background) !important;
     color: var(--primary) !important;
     border: 1px solid var(--border) !important;
     border-color: transparent !important;
 }
 
-.intanet-themes .dhx_after .dhx_month_head,
-.intanet-themes .dhx_before .dhx_month_head {
+.intranet-themes .dhx_after .dhx_month_head,
+.intranet-themes .dhx_before .dhx_month_head {
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .dhx_after .dhx_month_body,
-.intanet-themes .dhx_after .dhx_month_head,
-.intanet-themes .dhx_before .dhx_month_body,
-.intanet-themes .dhx_before .dhx_month_head,
-.intanet-themes .dhx_month_head,
-.intanet-themes .dhx_month_body {
+.intranet-themes .dhx_after .dhx_month_body,
+.intranet-themes .dhx_after .dhx_month_head,
+.intranet-themes .dhx_before .dhx_month_body,
+.intranet-themes .dhx_before .dhx_month_head,
+.intranet-themes .dhx_month_head,
+.intranet-themes .dhx_month_body {
     background-color: var(--primary-background) !important;
     color: var(--primary-foreground) !important;
 }
 
-.intanet-themes .dhx_multi_day,
-.intanet-themes .dhx_multi_day_icon,
-.intanet-themes .dhx_multi_day_icon_small {
+.intranet-themes .dhx_multi_day,
+.intranet-themes .dhx_multi_day_icon,
+.intranet-themes .dhx_multi_day_icon_small {
     background-color: var(--primary-background) !important;
 }
 
 
-.intanet-themes .modal#dhtmlx-filter-modal .modal-body button {
+.intranet-themes .modal#dhtmlx-filter-modal .modal-body button {
     color: var(--primary-foreground) !important;
     background-color: var(--primary) !important;
     border-color: var(--border) !important;
     padding: 6px 20px !important;
 }
 
-.intanet-themes .dhx_multi_day_icon,
-.intanet-themes .dhx_multi_day_icon_small {
+.intranet-themes .dhx_multi_day_icon,
+.intranet-themes .dhx_multi_day_icon_small {
     background: none !important;
     display: flex !important;
     justify-content: center !important;
@@ -1383,48 +1454,48 @@ print {
     font-size: 20px !important;
 }
 
-.intanet-themes .dhx_multi_day_icon:before,
-.intanet-themes .dhx_multi_day_icon_small:before {
+.intranet-themes .dhx_multi_day_icon:before,
+.intranet-themes .dhx_multi_day_icon_small:before {
     font-family: 'Font Awesome 6 Free' !important;
     font-weight: 900 !important;
     content: "\f017" !important;
 }
 
-.intanet-themes .dhx_multi_day_icon_small {
+.intranet-themes .dhx_multi_day_icon_small {
     font-size: 12px !important;
 }
 
-.intanet-themes .dhx_scale_hour {
+.intranet-themes .dhx_scale_hour {
     color: var(--primary-foreground) !important;
     background-color: var(--primary-background) !important;
     border-color: var(--border) !important;
 }
 
-.intanet-themes .dhx_scale_holder,
-.intanet-themes .dhx_scale_holder_now {
+.intranet-themes .dhx_scale_holder,
+.intranet-themes .dhx_scale_holder_now {
     background: transparent !important;
 }
 
-.intanet-themes .dhtmlXTooltip.tooltip {
+.intranet-themes .dhtmlXTooltip.tooltip {
     border-color: var(--border) !important;
     color: var(--secondary-foreground) !important;
     background-color: var(--secondary-background) !important;
 }
 
 /* Focus Mode */
-html.intanet-themes.focus-mode:has(.project) .header,
-html.intanet-themes.focus-mode:has(.project) .sidebar,
-html.intanet-themes.focus-mode:has(.project) #layout-bars,
-html.intanet-themes.focus-mode:has(.project) #search-button,
-html.intanet-themes.focus-mode:has(.project) #cody-wrapper {
+html.intranet-themes.focus-mode:has(.project) .header,
+html.intranet-themes.focus-mode:has(.project) .sidebar,
+html.intranet-themes.focus-mode:has(.project) #layout-bars,
+html.intranet-themes.focus-mode:has(.project) #search-button,
+html.intranet-themes.focus-mode:has(.project) #cody-wrapper {
     display: none !important;
 }
 
-html.intanet-themes.focus-mode:has(.project) .content {
+html.intranet-themes.focus-mode:has(.project) .content {
     margin: 0 !important;
 }
 
-html.intanet-themes.focus-mode:has(.project) .content .project>div {
+html.intranet-themes.focus-mode:has(.project) .content .project>div {
     margin: 0 auto !important;
     width: 70% !important;
     float: none !important;
@@ -1433,9 +1504,10 @@ html.intanet-themes.focus-mode:has(.project) .content .project>div {
 #back-btn-focus-mode,
 #toggle-focus-mode-btn {
     display: none;
+    width: fit-content !important;
 }
 
-html.intanet-themes #back-btn-focus-mode {
+html.intranet-themes #back-btn-focus-mode {
     display: none !important;
     position: fixed !important;
     top: 10px !important;
@@ -1447,13 +1519,13 @@ html.intanet-themes #back-btn-focus-mode {
     opacity: 0.5 !important;
 }
 
-html.intanet-themes .project>div>h1 {
+html.intranet-themes .project>div>h1 {
     display: flex !important;
     align-items: center !important;
     margin: 16px 0 !important;
 }
 
-html.intanet-themes #toggle-focus-mode-btn {
+html.intranet-themes #toggle-focus-mode-btn {
     display: inline !important;
     background: transparent !important;
     color: var(--primary) !important;
@@ -1464,20 +1536,44 @@ html.intanet-themes #toggle-focus-mode-btn {
     margin-left: 10px !important;
 }
 
-html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode {
+html.intranet-themes.focus-mode:has(.project) .project #back-btn-focus-mode {
     display: block !important;
 }
 
-html.intanet-themes.focus-mode:has(.project) .project #back-btn-focus-mode:hover,
-html.intanet-themes #toggle-focus-mode-btn:hover {
+html.intranet-themes.focus-mode:has(.project) .project #back-btn-focus-mode:hover,
+html.intranet-themes #toggle-focus-mode-btn:hover {
     opacity: 1 !important;
 }
 
 
-html.intanet-themes #toggle-focus-mode-btn i::before {
+html.intranet-themes #toggle-focus-mode-btn i::before {
     content: "\f31e" !important;
 }
 
-html.intanet-themes.focus-mode #toggle-focus-mode-btn i::before {
+html.intranet-themes.focus-mode #toggle-focus-mode-btn i::before {
     content: "\f78c" !important;
+}
+
+
+/* others */
+.intranet-themes button,
+.intranet-themes .btn.btn-default,
+.intranet-themes .btn.btn-info,
+.intranet-themes .btn.btn-warning,
+.intranet-themes .btn.btn-success,
+.intranet-themes .btn.btn-danger,
+.intranet-themes .btn.btn-primary,
+.intranet-themes input[type="submit"] {
+    color: white !important;
+}
+
+.intranet-themes button:hover,
+.intranet-themes .btn.btn-default:hover,
+.intranet-themes .btn.btn-info:hover,
+.intranet-themes .btn.btn-warning:hover,
+.intranet-themes .btn.btn-success:hover,
+.intranet-themes .btn.btn-danger:hover,
+.intranet-themes .btn.btn-primary:hover,
+.intranet-themes input[type="submit"]:hover {
+    color: white !important;
 }
